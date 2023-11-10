@@ -564,6 +564,7 @@ margin-bottom: 40px;
 #company-name{
     font-size: 38.6px; /* 38.6 px */
     letter-spacing: 1px;
+    background-color: transparent;
    
 }
 
@@ -612,6 +613,9 @@ margin-bottom: 40px;
     height: 100%;
     color: black;
     /* border: 1px solid red; */
+    /* border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%; */
+   
 }
 
 .bg-img{
@@ -634,12 +638,7 @@ margin-bottom: 40px;
    padding-top: 50px;
 }
 
-@media (min-width:900px){
-    .about-container{
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-}
+
 
 /* about top styles */
 .about-top{
@@ -647,12 +646,19 @@ margin-bottom: 40px;
     height: 347px;
     grid-column: 2/3;
     display: flex;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 @media (max-width:600px){
     .about-top{
     flex-direction: column;
     } 
 }
+
 
 /* top right */
 .about-top_left{
@@ -868,7 +874,7 @@ margin-bottom: 40px;
     }
     
 }
-.about-dot{
+/* .about-dot{
         position: absolute;
         width:142vmax;
         height:142vmax;
@@ -877,15 +883,15 @@ margin-bottom: 40px;
         transform:translate(-50%, -50%) scale(1.2);
         border-radius: 50%;
         background-color:#F0F5F5;
+} */
+
+.about-dot{
+    z-index: -1;
 }
 
-@media  (min-width:1000px){
-    .about-dot{
-        transform:translate(-50%, -50%) scale(0.7453);
-       
-}
 
-}
+
+
  /* about bottom */
  .about-bottom{
     grid-column: 2/3;
@@ -912,6 +918,27 @@ margin-bottom: 40px;
      }
  }
 
+
+ .about-bottom-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* border: 1px solid black; */
+}
+
+.about-bottom-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 500px;
+}
+
+.about-bottom-divider .shape-fill {
+    fill: #FFFFFF;
+}
 /* ------------------- */
 /*       service        */
 /* ------------------- */

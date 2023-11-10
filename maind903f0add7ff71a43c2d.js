@@ -177,24 +177,36 @@ requestAnimationFrame(raf);
   })
  
 //about  section animations 
-let tl1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".about-container",
-    start: "top center",
-    end:"top top",
-    scrub: true,
-    pin: false,
-  //  markers: true
-  }
-});
+// let tl1 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".about-hero",
+//     start: "top top",
+//     scrub: true,
+//     pin: false,
+//    markers: true
+//   }
+// });
 
-tl1.from(".about-dot", {scale:0})
+// tl1.to(".about-dot", {scale:1})
+//   .from(".about-top_left", {opacity:0}, 1)
+//   .from(".about-top_right", {opacity:0}, 1.5);
+ 
+
+  let tl1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about-hero",
+      start: "top top",
+      scrub: true,
+      pin: true,
+    //  markers: true
+    }
+  });
+  
+  tl1.to(".about-dot", {scale:1})
   .from(".about-top_left", {opacity:0}, 1)
-  .from(".about-top_right", {opacity:0}, 1.5);
- 
-
-
- 
+  .from(".about-top_right", {opacity:0}, 1.5)
+    .set("#about", {backgroundColor:"#F0F5F5"});
+   
 
 //about ul
 const tl2 = gsap.timeline({
@@ -230,7 +242,6 @@ tl2
     .to(".service-title", {x:"-100vw", xPercent:-100}, 0)
     .set(".service-main", {backgroundColor:"#F0F5F5"})
 
-
     
    //animations for the company section
 
@@ -256,4 +267,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=main59b054d2bb72125965ac.js.map
+//# sourceMappingURL=maind903f0add7ff71a43c2d.js.map
