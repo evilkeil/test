@@ -156,21 +156,17 @@ ol[role='list'] {
     background-color:#F0F5F5;
   }
 /* loop in company name section */
+.loop-one{
+
+}
+
 
 #about{
     position: relative;
     overflow: hidden;
 }
-.desktop-only{
-    display: none;
-}
-@media (min-width:1200px){
-    .loop-one-wrapper{
-        width: 1543px;
-        height: 702px;
-    }
 
-  }
+
 .carosel{
     position: relative;
 }
@@ -902,9 +898,10 @@ position: relative;
     margin-top: 169px;
  }
 .contact-btn{
-    border: none;
+    width: 158px;
+    height: 65px;
     background-color: transparent;
-    z-index: 2;
+    border: none;
  }
 .contact-btn:hover{
     cursor: pointer !important;
