@@ -15,7 +15,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
-<script defer src="main1c80f6ce49f53b0dc776.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
+<script defer src="main59b054d2bb72125965ac.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
 <body>
    
     <section id="nav" style="box-shadow: none">
@@ -72,9 +72,12 @@
         </div>
     </section>
     <section id="about">
-        <img src="mainbg.png" class="bg-img" alt="" data-bg>
+        <!-- <img src="./assets/images/transparentBkg/2x/mainbg.png" class="bg-img" alt="" data-bg> -->
+      
         <div class="about-container main-grid">
-           
+            <div class="full about-hero">
+                <div class="about-dot"></div>      
+            </div>
             <div class="about-top">
                 <div class="about-top_left">
                     <!-- <div class="loop-one_wrapper"><img src="./assets/images/decor/loop1@2x.png" alt="" class="loop-one"></div> -->
@@ -107,11 +110,6 @@
         </div>
     </section>
     <section id="service">
-        <!-- <div class="service-container">
-            <div class="service-top title-wrapper">
-                <h1 class="title_eng">SERVICE</h1>
-                <h2 class="title_jp">サービス</h2>
-            </div> -->
             
             <div class="full service-hero">
                 <div class="dot service-dot"></div>
@@ -227,7 +225,9 @@
     <!-- gsap and scroll libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+
     <script>
         //script for the service section carosel
 

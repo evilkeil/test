@@ -157,17 +157,46 @@ requestAnimationFrame(raf);
 //animations
 
 
-
   gsap.registerPlugin(ScrollTrigger);
   
 
+
   //animations for the about section
 
-  // const tl = gsap.timeline();
+  //company name
+ 
+
+  const text = new SplitType('#company-name', { types: 'chars' });
+
+  text.chars.forEach((char, i) => {
+    gsap.to(char, {
+      opacity: 1,
+      duration: 0, // Instantly set initial opacity to 0.2
+      delay: i * 0.1 // Stagger the animation by 0.1 seconds
+    });
+  })
+ 
+//about  section animations 
+let tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".about-container",
+    start: "top center",
+    end:"top top",
+    scrub: true,
+    pin: false,
+  //  markers: true
+  }
+});
+
+tl1.from(".about-dot", {scale:0})
+  .from(".about-top_left", {opacity:0}, 1)
+  .from(".about-top_right", {opacity:0}, 1.5);
+ 
 
 
  
 
+//about ul
 const tl2 = gsap.timeline({
   scrollTrigger: ".animate-2",
   start: "60% bottom",
@@ -175,7 +204,7 @@ const tl2 = gsap.timeline({
 });
 
 tl2
-  .from(".animate-1", { y: 100, opacity: 0, duration: 0.4 })
+  .from(".animate-1", { y: 100, opacity: 0, duration: 0.4 },0.6)
   .from(".animate-2", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-3", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-4", { y: 100, opacity: 0, duration: 0.4 })
@@ -183,6 +212,7 @@ tl2
   .from(".animate-6", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-7", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-8", { y: 100, opacity: 0, duration: 0.4 });
+
 
    //animations for the service section
 
@@ -226,4 +256,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=main1c80f6ce49f53b0dc776.js.map
+//# sourceMappingURL=main59b054d2bb72125965ac.js.map

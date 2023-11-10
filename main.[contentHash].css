@@ -136,9 +136,25 @@ ol[role='list'] {
 }
 
 /* ------------------- */
-/*       decor-images     */
+/*       decor    */
 /* ------------------- */
-
+/* bg animation styles */
+.full {
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+  }
+  
+  .dot {
+    position: absolute;
+    width:142vmax;
+    height:142vmax;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    background-color:#F0F5F5;
+  }
 /* loop in company name section */
 
 #about{
@@ -556,6 +572,7 @@ margin-bottom: 40px;
     justify-self: end;
     font-family: var(--ff-trade-gothic);
     z-index: 3;
+    color:black;
 }
 
 @media (max-width:600px){
@@ -568,6 +585,7 @@ margin-bottom: 40px;
         right: 0; */
         font-size: 1.5rem; /* 24 px */
         letter-spacing: -0.77px;
+        font-kerning: none;
         
     }
 }
@@ -583,7 +601,9 @@ margin-bottom: 40px;
     }
 }
 
-
+.char{
+    opacity: 0.2;
+}
 /* ------------------- */
 /*       about         */
 /* ------------------- */
@@ -701,7 +721,7 @@ margin-bottom: 40px;
 /* about center */
 .about-center{
     grid-column: 2/3;
-    margin-top: 83px;
+    /* margin-top: -70px; */
     display: grid;
     place-items: center;
 }
@@ -798,7 +818,7 @@ margin-bottom: 40px;
     
     }
     .sub-item{
-        font-size: 14px;
+        font-size: 14px; 
         width: 92px;
         
     
@@ -848,6 +868,24 @@ margin-bottom: 40px;
     }
     
 }
+.about-dot{
+        position: absolute;
+        width:142vmax;
+        height:142vmax;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%) scale(1.2);
+        border-radius: 50%;
+        background-color:#F0F5F5;
+}
+
+@media  (min-width:1000px){
+    .about-dot{
+        transform:translate(-50%, -50%) scale(0.7453);
+       
+}
+
+}
  /* about bottom */
  .about-bottom{
     grid-column: 2/3;
@@ -877,9 +915,12 @@ margin-bottom: 40px;
 /* ------------------- */
 /*       service        */
 /* ------------------- */
+/* ------------------- */
+/*       service        */
+/* ------------------- */
 
  /* mobile first */
-#service{
+ #service{
     z-index: 5;
     position: relative;
     overflow-y: visible;
@@ -1239,7 +1280,7 @@ margin-bottom: 40px;
 /*       company       */
 /* ------------------- */
 
-.full {
+/* .full {
     width: 100%;
     height: 100vh;
     overflow:hidden;
@@ -1254,7 +1295,7 @@ margin-bottom: 40px;
     transform:translate(-50%, -50%) scale(0);
     border-radius: 50%;
     background-color:#F0F5F5;
-  }
+  } */
   
   .company-title{
     font-size: 8vmin;
@@ -1463,6 +1504,20 @@ margin-bottom: 40px;
 }
 
     
-
+ @media (max-width:600px){
+    .animate-1,
+    .animate-2,
+    .animate-3,
+    .animate-4,
+    .animate-5,
+    .animate-6,
+    .animate-7,
+    .animate-8{
+        font-size: 14px; 
+        
+    }
+    
+     }
+    
 
 /*# sourceMappingURL=main.[contentHash].css.map*/
