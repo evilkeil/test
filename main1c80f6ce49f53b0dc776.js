@@ -186,95 +186,24 @@ tl2
 
    //animations for the service section
 
-   const tl3 = gsap.timeline();
-   
-   tl3
-   .to(".service-bg-img", { clipPath: 'circle(60% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(65% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(66% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(67% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(68% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(69% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(70% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(71% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(72% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(73% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(74% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(75% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(76% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(77% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(78% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(79% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(80% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(81% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(82% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(83% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(84% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'circle(85% at 50% 50%)' })
-  .to(".service-bg-img", { clipPath: 'inset(0 0 0 0)' });
-
-
-
-  ScrollTrigger.create({
-    trigger: "#serviceTrigger",
-    start: "top center",
-    end: "500px top",
-    scrub: -1, // Enable scrubbing
-    animation: tl3, // Use the correct timeline variable
-    markers: false
-  });
-
-
-
-  ///////////// 
-
- 
-// const tl6 = gsap.timeline();
-
-// tl6.to(".animate-svg", {
-//     attr: { d: "M600,112.77C268.63,112.77,0,65.52,0,100V120H1200V100C1200,65.52,931.37,112.77,600,112.77Z" },
-//     duration: 1, // Adjust the duration as needed
-//     ease: "none",
-// });
-
-// ScrollTrigger.create({
-//     trigger: "#serviceTrigger",
-//     start: "top center",
-//     end: "500px top",
-//     scrub: 1, // Enable scrubbing
-//     animation: tl6,
-//     markers: false
-// });
-
-const tl6 = gsap.timeline();
-
-tl6.to(".service-container", {
-    borderRadius:"0%",
-});
-
-ScrollTrigger.create({
-    trigger: "#serviceTrigger",
-    start: "top center",
-    end: "500px top",
-    scrub: 1, // Enable scrubbing
-    animation: tl6,
-    markers: false
-});
-  
-const circle = document.querySelector('.circle');
-
-gsap.to(circle, {
-    width: 200, // Adjust the expanded size as needed
-    height: 200, // Adjust the expanded size as needed
-    duration: 1, // Adjust the animation duration
+   let tl3 = gsap.timeline({
     scrollTrigger: {
-        trigger: '#service', // Specify the trigger element by ID
-        start: 'top center', // Start the animation when the top of the section reaches the center of the viewport
-        end: 'bottom center', // End the animation when the bottom of the section reaches the center of the viewport
-        scrub: 1, // Enable scrubbing for a smooth effect
-    },
-});
+      trigger: ".service-hero",
+      start: "top top",
+      scrub: true,
+      pin: true,
+    //  markers: true
+    }
+  });
+  
+  tl3.to(".service-dot", {scale:1})
+    .to(".service-title", {x:"-100vw", xPercent:-100}, 0)
+    .set(".service-main", {backgroundColor:"#F0F5F5"})
+
+
+    
    //animations for the company section
+
 
 
    let tl4 = gsap.timeline({
@@ -287,15 +216,14 @@ gsap.to(circle, {
     }
   });
   
-  tl4.to(".dot", {scale:1})
+  tl4.to(".company-dot", {scale:1})
     .to(".company-title", {x:"-100vw", xPercent:-100}, 0)
     .set(".company-main", {backgroundColor:"#F0F5F5"})
   
 
-// Create a timeline for the SVG transition
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main44a389be5103ff81d650.js.map
+//# sourceMappingURL=main1c80f6ce49f53b0dc776.js.map

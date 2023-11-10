@@ -1177,6 +1177,16 @@ margin-bottom: 40px;
     width: 100%;
 }
 
+.service-title{
+    font-size: 8vmin;
+    font-weight: bold;
+    margin:0;
+    white-space:nowrap;
+    position:absolute;
+    left:100%;
+    top:50%;
+    transform:translateY(-50%);
+  }
 /* desktop version  */
 
 @media (min-width:1200px){
@@ -1261,7 +1271,8 @@ margin-bottom: 40px;
       font-family:Prompt, sans-serif;
   }
   
-  .company-main {
+  .company-main,
+  .main-common {
     padding:5vw;
     color:black;
   }
