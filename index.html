@@ -15,7 +15,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
-<script defer src="main7fddb7575cd786e43efb.js"></script></head>
+<script defer src="main44a389be5103ff81d650.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
 <body>
    
     <section id="nav" style="box-shadow: none">
@@ -107,7 +107,6 @@
         </div>
     </section>
     <section id="service">
-        <img src="mainbg.png" class="service-bg-img" alt="" data-bg>
         <div class="service-container">
             <div class="service-top title-wrapper">
                 <h1 class="title_eng">SERVICE</h1>
@@ -115,7 +114,6 @@
             </div>
 
                 <div class="carousel">
-                    <!-- <div class="loop-three_wrapper"><img src="./assets/images/decor/loop1@2x.png" alt="" class="loop-three"></div> -->
                     <div class="prev" id="serviceBtn">
                         <button class="carosel-prev-btn carosel-btn">
                            <img src="prev@2x-min.png" alt="" class="service-carosel-btn_img">
@@ -169,13 +167,15 @@
     </section>
     <section id="topics"></section>
     <section id="company">
-        <img src="mainbg.png" class="company-bg-img" alt="" data-bg>
-        <div class="company-container">
-            <div class="company-title title-wrapper">
-                <h1 class="title_eng">COMPANY</h1>
-                <h2 class="title_jp">会社概要</h2>
+        <div class="full company-hero">
+            <div class="dot"></div>
+                    <div class="company-title title-wrapper">
+                    <h1 class="title_eng">COMPANY</h1>
+                    <h2 class="title_jp">会社概要</h2>
             </div>
-                
+                        
+        </div>
+        <div class="company-main">
             <div class="company-info">
                 <ul role="list" class="info-list">
                     <li class="info-list-item company_name">
@@ -246,26 +246,7 @@
            
         });
 
-        // $(document).ready(function() {
-        //     $(window).on('scroll resize', function () {
-        //         shrinkBg();
-        //     });
-
-        //     function shrinkBg() {
-        //         // Add your code here to control the expansion of the "about" section
-        //         var scrollPos = $(window).scrollTop();
-        //         var aboutSection = $("#about");
-        //         var expandHeight = 300; // Adjust this value based on when you want the section to expand
-
-        //         if (scrollPos > expandHeight) {
-        //             // Expand the about section
-        //             aboutSection.addClass("expanded");
-        //         } else {
-        //             // Shrink the about section
-        //             aboutSection.removeClass("expanded");
-        //         }
-        //     }
-        // });
+       
        
     </script>
 </body>
