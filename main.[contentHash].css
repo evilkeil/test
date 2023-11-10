@@ -63,6 +63,7 @@ picture {
 @media (max-width:350px){
     body{
        overflow: scroll;
+       -webkit-text-size-adjust: 100%;
     }
 }
 
