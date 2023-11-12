@@ -60,19 +60,19 @@ picture {
     margin: 0;
 }
 
-@media (max-width:350px){
+/* @media (max-width:320px){
     body{
        overflow: scroll;
        -webkit-text-size-adjust: 100%;
     }
-}
+} */
 
 /* set up the body */
 body {
     line-height: 1.5;
     min-height: 100dvh;
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     position: relative;
     color: var(--main-color);
     margin: 0;
@@ -157,8 +157,16 @@ ol[role='list'] {
     background-color:#F0F5F5;
   }
 /* loop in company name section */
+#hero{
+    position: relative;
+}
 .loop-one{
-
+    /* height: 1532.4528px;
+    width: 685.5707px; */
+    position: absolute;
+    bottom: -80%;
+    right: -30%;
+    z-index: 6;
 }
 
 
@@ -388,7 +396,7 @@ body{
 /*       hero          */
 /* ------------------- */
 #hero{
-    /* min-height: 50vh; */
+    /* overflow-x: hidden; */
 }
 /* hero top */
 .hero-top-container{
