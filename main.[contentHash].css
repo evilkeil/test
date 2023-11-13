@@ -856,7 +856,26 @@ position: relative;
     display: grid;
     place-items: center;
 }
+.about-hero{
+    /* border:1px solid black; */
+}
+.about-container{
+    /* border: 1px solid red; */
+}
 
+@media (min-width:390px)and (max-width:760px){
+    .about-container {
+        margin-top: -25vh;
+        /* transform: translateY(-130px); */
+    }
+}
+
+@media (max-width:389px){
+    .about-container {
+        /* margin-top: -20svh; */
+        transform: translateY(-110px);
+    }
+}
 
 .about-us-list{
     width: 660px;
