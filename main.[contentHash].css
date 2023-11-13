@@ -201,13 +201,16 @@ html, body {
         transform: scale(2.5);
     }
 }
-.about-bottom .contact-btn{
+.about-bottom{
     z-index: 7;
+    opacity: 0.99;
 }
 .about-center{
     z-index: 7;
 }
-
+.about-container{
+    z-index: 7;
+}
 /* loop at the end of the about section  */
 
 #about{
@@ -682,6 +685,7 @@ position: relative;
     letter-spacing: 1px;
     background-color: transparent;
     z-index: 7;
+    -webkit-text-size-adjust: 100%;
 }
 
 .company-name h3{
