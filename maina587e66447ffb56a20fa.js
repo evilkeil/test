@@ -225,11 +225,17 @@ tl2
     }
   });
   
-  tl3.to(".service-dot", {scale:1})
-    .to(".service-title", {x:"-100vw", xPercent:-100}, 0)
-    .set(".service-main", {backgroundColor:"#F0F5F5"})
+  // tl3.to(".service-dot", {scale:1})
+  //   .to(".service-title", {x:"-100vw", xPercent:-100}, 0)
+  //   .set(".service-main", {backgroundColor:"#F0F5F5"})
 
     
+  tl3.to(".service-dot", {scale:0.5})
+  .to(".service-title", {x:"-50vw", xPercent:-50}, 0)
+  .to(".service-dot", {scale:1})
+  .to(".service-main", {y:"-50%"})
+  .set(".service-main", {backgroundColor:"#F0F5F5"})
+
    //animations for the company section
 
 
@@ -254,4 +260,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=main8e81707d4df9d629157f.js.map
+//# sourceMappingURL=maina587e66447ffb56a20fa.js.map
