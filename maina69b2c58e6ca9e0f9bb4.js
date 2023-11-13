@@ -234,7 +234,8 @@ tl2
   .to(".service-title", {x:"-50vw", xPercent:-50}, 0)
   .to(".service-dot", {scale:1})
   .to(".service-main", {y:"-50%"})
-  .set(".service-main", {backgroundColor:"#F0F5F5"})
+  .set(".service-main", {backgroundColor:"transparent"})
+  .set("#service", {backgroundColor:"#F0F5F5"})
 
    //animations for the company section
 
@@ -260,4 +261,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=maina587e66447ffb56a20fa.js.map
+//# sourceMappingURL=maina69b2c58e6ca9e0f9bb4.js.map

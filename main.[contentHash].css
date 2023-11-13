@@ -250,6 +250,7 @@ html, body {
     position: relative;
     /* border:1px solid red; */
 }
+
 .loop-three {
     position: absolute;
     top: 50%;
@@ -257,13 +258,18 @@ html, body {
     transform: translate(-50%, -50%);
     min-width: 1543.3858px;
     min-height: 701.9944px;
+    z-index: -1;
+    /* background: transparent; */
+    /* border: 1px solid red; */
 }
 .carousel{
     position: relative;
-    margin-bottom:20px;
+    /* margin-bottom:100px; */
     /* border:1px solid red; */
-    background: transparent;
+    /* background: transparent; */
 }
+
+
 
 /* loop in the company section */
 .company-main{
@@ -1453,6 +1459,57 @@ position: relative;
     }
     .service-carousel-marker{
         display: block;
+    }
+}
+
+
+/* styles realted to animations */
+.carousel,
+.loop-three{
+    margin-bottom:100px;
+    /* border:1px solid red; */
+    background: transparent;
+}
+
+@media(min-width:389px){
+    .carousel,
+.loop-three{
+        margin-bottom:310px;
+        /* border:1px solid red; */
+        background: transparent;
+    }
+}
+@media(min-width:400px){
+    .carousel,
+    .loop-three{
+        margin-bottom:350px;
+        /* border:1px solid red; */
+        background: transparent;
+    }
+}
+
+@media(min-width:419px){
+    .carousel,
+    .loop-three{
+        margin-bottom: 380px;
+        /* border:1px solid red; */
+        background: transparent;
+    }
+}
+@media(min-width:800px){
+    .carousel,
+    .loop-three{
+        margin-bottom: 550px;
+        /* border:1px solid red; */
+        background: transparent;
+    }
+}
+@media(min-width:1000px){
+    .carousel,
+.loop-three{
+        margin-bottom: 0px;
+        /* border:1px solid red; */
+        background: transparent;
     }
 }
 /* ------------------- */
