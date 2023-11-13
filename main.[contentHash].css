@@ -168,14 +168,14 @@ html, body {
     /* height: 1532.4528px;
     width: 685.5707px; */
     position: absolute;
-    bottom: -500px;
+    bottom: -700px;
     right: -30%;
     z-index: 6;
     /* width: 100%; */
     
 }
 
-@media (max-width:700px){
+/* @media (max-width:700px){
     .loop-one{
         
         bottom: -250px;
@@ -183,19 +183,19 @@ html, body {
         z-index: 6;
         transform: scale(2.5);
     }
-}
-@media (min-width: 700px) and (max-width: 1024px) {
+} */
+@media (min-width: 820px) and (max-width: 1024px) {
     .loop-one {
-        bottom: -280px;
+        bottom: -1250%;
         right: -45%;
         z-index: 6;
-        transform: scale(1.5);
+        transform: scale(2.5);
     }
 }
-@media (max-width:700px){
+@media (max-width:820px){
     .loop-one{
         
-        bottom: -230px;
+        bottom: -800%;
         right: -45%;
         z-index: 6;
         transform: scale(2.5);
