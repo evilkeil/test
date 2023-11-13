@@ -1512,22 +1512,22 @@ position: relative;
         background: transparent;
     }
 }
-@media(min-width:800px){
+@media(min-width:799px){
     .carousel,
     .loop-three{
-        margin-bottom: 550px;
+        margin-bottom: 100px;
         /* border:1px solid red; */
         background: transparent;
     }
 }
-@media(min-width:1000px){
+/* @media(min-width:1000px){
     .carousel,
 .loop-three{
         margin-bottom: 0px;
-        /* border:1px solid red; */
+        border:1px solid red;
         background: transparent;
     }
-}
+} */
 /* ------------------- */
 /*       topics         */
 /* ------------------- */
