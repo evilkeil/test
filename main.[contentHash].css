@@ -157,14 +157,15 @@ ol[role='list'] {
     background-color:#F0F5F5;
   }
 /* loop in company name section */
-#hero{
+.company-name{
     position: relative;
+    overflow-x: hidden;
 }
 .loop-one{
     /* height: 1532.4528px;
     width: 685.5707px; */
     position: absolute;
-    bottom: -80%;
+    bottom: -500px;
     right: -30%;
     z-index: 6;
 }
@@ -396,7 +397,7 @@ body{
 /*       hero          */
 /* ------------------- */
 #hero{
-    /* overflow-x: hidden; */
+ 
 }
 /* hero top */
 .hero-top-container{
@@ -462,6 +463,13 @@ position: relative;
     font-family: var(--ff-trade-gothic);
     letter-spacing: 1.41px;
     
+  }
+
+  @media (min-width:950px) {
+    .hero-title{
+        width: 684px;
+        height: 110px;
+    }
   }
 
   /* mobile */
