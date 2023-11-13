@@ -1470,7 +1470,14 @@ position: relative;
     /* border:1px solid red; */
     background: transparent;
 }
-
+@media(max-width:370px){
+    .carousel,
+.loop-three{
+        margin-bottom:200px;
+        /* border:1px solid red; */
+        background: transparent;
+    }
+}
 @media(min-width:389px){
     .carousel,
 .loop-three{
