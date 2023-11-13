@@ -171,24 +171,34 @@ html, body {
     bottom: -500px;
     right: -30%;
     z-index: 6;
-    width: 100%;
+    /* width: 100%; */
+    
 }
 
 @media (max-width:700px){
     .loop-one{
         
-        bottom: -100px;
+        bottom: -250px;
+        right: -45%;
+        z-index: 6;
+        transform: scale(2.5);
+    }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    .loop-one {
+        bottom: -280px;
         right: -45%;
         z-index: 6;
         transform: scale(1.5);
     }
 }
-@media (min-width: 700px) and (max-width: 1024px) {
-    .loop-one {
-        bottom: -300px;
+@media (max-width:700px){
+    .loop-one{
+        
+        bottom: -230px;
         right: -45%;
         z-index: 6;
-        transform: scale(1.5);
+        transform: scale(2.5);
     }
 }
 .about-bottom .contact-btn{
@@ -232,7 +242,17 @@ html, body {
     }
 }
 
-
+/* loop in the service section  */
+.carousel{
+    position: relative;
+    border: 1px solid red;
+}
+.loop-three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .carosel{
     position: relative;
 }
@@ -648,7 +668,11 @@ position: relative;
     z-index: 3;
     color:black;
 }
-
+.char{
+    opacity: 0.2;
+    /* font-size: 24px; */
+    font-size: 38.6px;
+}
 @media (max-width:600px){
     .company-name{
         display: block;
@@ -663,6 +687,12 @@ position: relative;
         
     }
 }
+
+@media (max-width:700px){
+    .char{
+        font-size: 24px;
+    }
+}
 @media (max-width:1200px){
     .company-name{
         display: block;
@@ -670,14 +700,11 @@ position: relative;
     #company-name{
         position: absolute;
         right: 0;
-        
-        
     }
 }
 
-.char{
-    opacity: 0.2;
-}
+
+
 /* ------------------- */
 /*       about         */
 /* ------------------- */
