@@ -191,12 +191,45 @@ html, body {
         transform: scale(1.5);
     }
 }
+.about-bottom .contact-btn{
+    z-index: 7;
+}
+.about-center{
+    z-index: 7;
+}
 
-
+/* loop at the end of the about section  */
 
 #about{
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.loop-two{
+    position: absolute;
+    bottom: -400px;
+    right: 40%;
+    z-index: 6;
+   
+}
+
+@media (max-width:700px){
+    .loop-two{
+        position: absolute;
+        bottom: -100px;
+        right: 50%;
+        transform: scale(2)
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .loop-two{
+        position: absolute;
+        bottom: -190px;
+        right: 30%;
+        z-index: 6;
+       
+    }
 }
 
 
@@ -936,6 +969,10 @@ position: relative;
  .about-bottom{
     grid-column: 2/3;
     margin-top: 169px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 .contact-btn{
     width: 158px;
