@@ -248,6 +248,7 @@ html, body {
 /* loop in the service section  */
 .service-main{
     position: relative;
+    /* border:1px solid red; */
 }
 .loop-three {
     position: absolute;
@@ -257,8 +258,11 @@ html, body {
     min-width: 1543.3858px;
     min-height: 701.9944px;
 }
-.carosel{
+.carousel{
     position: relative;
+    margin-bottom:20px;
+    /* border:1px solid red; */
+    background: transparent;
 }
 
 /* loop in the company section */
@@ -1108,6 +1112,10 @@ position: relative;
 
 }
 
+.service-hero{
+    /* z-index: 2; */
+}
+
 
 .service-bg-img{
     width: 100%;
@@ -1396,6 +1404,7 @@ position: relative;
     margin-top: 33.5px;
     width: 100%;
 }
+
 
 .service-title{
     font-size: 8vmin;
