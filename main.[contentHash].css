@@ -863,17 +863,18 @@ position: relative;
     /* border: 1px solid red; */
 }
 
-@media (min-width:390px)and (max-width:760px){
+@media (min-width:394px)and (max-width:760px){
     .about-container {
         margin-top: -25vh;
         /* transform: translateY(-130px); */
     }
 }
 
-@media (max-width:389px){
+@media (max-width:393px){
     .about-container {
-        /* margin-top: -20svh; */
-        transform: translateY(-110px);
+        margin-top: -20vh;
+        transform: translateY(-50px);
+        margin-top: -8vh;
     }
 }
 
