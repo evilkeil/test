@@ -1466,7 +1466,7 @@ position: relative;
 /* styles realted to animations */
 .carousel,
 .loop-three{
-    margin-bottom:100px;
+    /* margin-bottom:100px; */
     /* border:1px solid red; */
     background: transparent;
 }
@@ -1474,7 +1474,7 @@ position: relative;
 @media(max-width:300px){
     .carousel,
 .loop-three{
-        margin-bottom:100px;
+        /* margin-bottom:100px; */
         /* border:1px solid red; */
         background: transparent;
     }
@@ -1482,7 +1482,7 @@ position: relative;
 @media(max-width:370px){
     .carousel,
 .loop-three{
-        margin-bottom:120px;
+        /* margin-bottom:120px; */
         /* border:1px solid red; */
         background: transparent;
     }
@@ -1490,26 +1490,30 @@ position: relative;
 @media(min-width:389px){
     .carousel,
 .loop-three{
-        margin-bottom:310px;
+        /* margin-bottom:310px; */
         /* border:1px solid red; */
         background: transparent;
+        margin-top: -250px;
     }
 }
 @media(min-width:400px){
     .carousel,
     .loop-three{
-        margin-bottom:350px;
+        /* margin-bottom:340px; */
         /* border:1px solid red; */
         background: transparent;
+        margin-top: -270px;
+    
     }
 }
 
 @media(min-width:419px){
     .carousel,
     .loop-three{
-        margin-bottom: 250px;
+        /* margin-bottom: 250px; */
         /* border:1px solid red; */
         background: transparent;
+        margin-top: -200px;
     }
 }
 @media(min-width:799px){
