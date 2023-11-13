@@ -60,12 +60,12 @@ picture {
     margin: 0;
 }
 
-/* @media (max-width:320px){
+@media (max-width:320px){
     body{
        overflow: scroll;
        -webkit-text-size-adjust: 100%;
     }
-} */
+}
 
 /* set up the body */
 body {
@@ -136,6 +136,9 @@ ol[role='list'] {
     cursor: pointer;
 }
 
+html, body {
+    overflow-x:hidden 
+  } 
 /* ------------------- */
 /*       decor    */
 /* ------------------- */
@@ -159,7 +162,7 @@ ol[role='list'] {
 /* loop in company name section */
 .company-name{
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .loop-one{
     /* height: 1532.4528px;
@@ -168,7 +171,27 @@ ol[role='list'] {
     bottom: -500px;
     right: -30%;
     z-index: 6;
+    width: 100%;
 }
+
+@media (max-width:700px){
+    .loop-one{
+        
+        bottom: -100px;
+        right: -45%;
+        z-index: 6;
+        transform: scale(1.5);
+    }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    .loop-one {
+        bottom: -300px;
+        right: -45%;
+        z-index: 6;
+        transform: scale(1.5);
+    }
+}
+
 
 
 #about{
@@ -582,7 +605,7 @@ position: relative;
     font-size: 38.6px; /* 38.6 px */
     letter-spacing: 1px;
     background-color: transparent;
-   
+    z-index: 7;
 }
 
 .company-name h3{
@@ -1564,5 +1587,8 @@ position: relative;
     
      }
     
+
+    
+
 
 /*# sourceMappingURL=main.[contentHash].css.map*/
