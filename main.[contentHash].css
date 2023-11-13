@@ -1498,7 +1498,7 @@ position: relative;
 @media(min-width:419px){
     .carousel,
     .loop-three{
-        margin-bottom: 380px;
+        margin-bottom: 250px;
         /* border:1px solid red; */
         background: transparent;
     }
