@@ -243,15 +243,16 @@ html, body {
 }
 
 /* loop in the service section  */
-.carousel{
+.service-main{
     position: relative;
-    border: 1px solid red;
 }
 .loop-three {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 1543.3858px;
+    min-height: 701.9944px;
 }
 .carosel{
     position: relative;
