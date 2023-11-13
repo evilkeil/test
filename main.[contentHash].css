@@ -510,6 +510,9 @@ margin-left: 240px;
 margin-right: 85px;
 margin-bottom: 40px;
 position: relative;
+/* transform: translateY(20px); */
+
+
 
 }
 
@@ -576,17 +579,11 @@ position: relative;
 
   /* mobile */
   @media (max-width:950px){
-    /* .hero-top-img{
-        width: 207px;
-        height: 33.84px;
-        
-      } */
-      
       .hero-top-container{
         margin-top: 0px;
         margin-left: 19.97px;
         margin-right: 18.39px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         }
         .scroll-btn{
             width: 73.21px;
@@ -686,6 +683,7 @@ position: relative;
     background-color: transparent;
     z-index: 7;
     -webkit-text-size-adjust: 100%;
+    margin-top: 10px;
 }
 
 .company-name h3{
