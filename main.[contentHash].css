@@ -897,7 +897,7 @@ position: relative;
 
 @media (max-width:393px){
     .about-container {
-        transform: translateY(-40px);
+        transform: translateY(-50px);
         margin-top: 20px;
     }
 }
@@ -1627,13 +1627,14 @@ position: relative;
       padding: 0;
       width: 100%;
       margin: 0 auto;
+      z-index: 10; 
   }
   .info-list-item{
       display: grid;
       grid-template-columns: 50px  201px 1fr;
       gap:50px;
       width: 350px;
-      height: 90px; 
+      height: 90px;
   }
   
   .info-title{
