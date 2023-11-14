@@ -1954,7 +1954,7 @@ background-color: var(--section-bg);
 }
 
 #TnC{
-background-color: var(--section-bg);
+background-color: var(--section-bg) !important;
 }
 .label-name_wrapper{
     display: flex;
