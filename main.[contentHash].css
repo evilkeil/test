@@ -1956,6 +1956,15 @@ background-color: var(--section-bg);
 #TnC{
 background-color: var(--section-bg);
 }
+.label-name_wrapper{
+    display: flex;
+    align-items: center;
+    
+}
+.star{
+    font-size: 10px;
+    align-self: flex-start;
+  }
 .terms{
     height: 290px;
     overflow: scroll;
@@ -2087,8 +2096,5 @@ background-color: var(--section-bg);
     
      }
     
-
-    
-
 
 /*# sourceMappingURL=main.[contentHash].css.map*/
