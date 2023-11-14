@@ -1888,11 +1888,23 @@ position: relative;
 .contact-header_sub small{
     font-size: 14px;
 }
-
+.radio-label{
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
 #contact label{
     color:black
 }
 
+#temp{
+    width: 20px;
+    aspect-ratio: 1;
+}
+#agree_label{
+    width: 100%;
+    font-size: 16px;
+}
 /* contact form other styles */
 #contact input{
     border: none;
@@ -1903,6 +1915,10 @@ position: relative;
     border-radius: 10px;
 }
 
+#contact [type="checkbox"]{
+width: 20px;
+aspect-ratio: 1;
+}
 
 /* contact spacing and margins */
 .contact-wrapper{
@@ -1929,8 +1945,14 @@ position: relative;
 .label-name{
     margin-bottom: 12px;
 }
-
-
+.inquiry-details{
+    margin-bottom: 41.5px;
+}
+.terms-and-conditions_agree-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8.84px;
+}
 /* ------------------- */
 /*       footer        */
 /* ------------------- */
