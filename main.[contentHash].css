@@ -1104,29 +1104,30 @@ position: relative;
 }
 
 #about::after{
-content:"" ;
-border-radius: 50%;
-/* border: 1px solid red; */
-width: 100%;
-position: absolute;
-bottom: -50px;
-height: 100px;
-background-color: var(--section-bg);
-}
-
-@media (min-width:750px){
-    #about::after{
-        content:"" ;
-        border-radius: 50%;
-        /* border: 1px solid red; */
-        width: 100%;
-        position: absolute;
-        bottom: -50px;
-        height: 120px;
-        background-color: var(--section-bg);
-        } 
-}
-
+    content:"" ;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    height: 100px;
+    background-color: var(--section-bg);
+    }
+    
+    @media (min-width:750px){
+        #about::after{
+            content:"" ;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            width: 100%;
+            position: absolute;
+            bottom: -50px;
+            height: 120px;
+            background-color: var(--section-bg);
+            } 
+    }
+    
+    
 
 .about-bottom-divider .shape-fill {
     fill: #FFFFFF;
@@ -1555,13 +1556,38 @@ background-color: var(--section-bg);
     }
 }
 
+#service::after{
+    content:"" ;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    height: 100px;
+    background-color: var(--section-bg);
+    /* border: 1px solid red; */
+    }
+    
+    @media (min-width:750px){
+        #service::after{
+            content:"" ;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            width: 100%;
+            position: absolute;
+            bottom: -45px;
+            height: 120px;
+            background-color: var(--section-bg);
+            } 
+    }
+    
 /* ------------------- */
 /*       topics         */
 /* ------------------- */
 
 #topics{
     height: 1000px;
-    /* margin-top: 80px; */
+    margin-top: 80px;
     background-color: var(--section-bg);
 }
 /* ------------------- */
@@ -1748,6 +1774,35 @@ background-color: var(--section-bg);
   .temp{
     color:black;
   }
+#company{
+    position: relative;
+}
+  #company::after{
+    content:"" ;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    height: 100px;
+    background-color: var(--section-bg);
+    /* border: 1px solid red; */
+    z-index: -1;
+    }
+    
+    @media (min-width:750px){
+        #company::after{
+            content:"" ;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            width: 100%;
+            position: absolute;
+            bottom: 35px;
+            height: 120px;
+            background-color: var(--section-bg);
+            } 
+    }
+    
 
 /* ------------------- */
 /*       contact       */
@@ -1797,6 +1852,85 @@ background-color: var(--section-bg);
     background-color: var(--section-bg);
     border: 2px solid black;
 }
+
+/*contact typography */
+
+.contact-header_jp{
+    font-size: 20px;
+    font-family: a-otf-ud-shin-go-con80-pr6n, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    margin-bottom: 4.6px;
+}
+.contact-header_title{
+    font-size: 60px;
+    font-family: a-otf-ud-shin-go-con80-pr6n, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2.4px;
+    margin-top: 0;
+}
+.contact-form{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.64px;
+}
+
+.contact-header_sub{
+    font-size: 16px;
+    font-family: a-otf-ud-shin-go-con80-pr6n, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 28px;
+}
+.contact-header_sub small{
+    font-size: 14px;
+}
+
+#contact label{
+    color:black
+}
+
+/* contact form other styles */
+#contact input{
+    border: none;
+    height: 60px;
+    background-color: var(--section-bg);
+    padding-left: 32px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+/* contact spacing and margins */
+.contact-wrapper{
+    margin-bottom: 32.89px;
+}
+
+.name-wrapper{
+    margin-bottom: 27.13px;
+}
+
+.name_kana-wrapper{
+    margin-bottom: 26.08px;
+}
+.your_company-wrapper{
+    margin-bottom: 27.24px;
+}
+.your_company-wrapper{
+    margin-bottom: 27.24px;
+}
+
+.email-wrapper{
+    margin-bottom: 47.14px;
+}
+.label-name{
+    margin-bottom: 12px;
+}
+
+
 /* ------------------- */
 /*       footer        */
 /* ------------------- */
