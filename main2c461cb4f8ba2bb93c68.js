@@ -154,14 +154,7 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-//back to top button
-// const backToTop = document.getElementById('back-to-top-btn');
 
-// backToTop.addEventListener('click',()=>{
-//   lenis.scrollTo('#hero',{
-    
-//   })
-// })
 //animations
 
 
@@ -268,4 +261,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=maind9221cda36be43a201e4.js.map
+//# sourceMappingURL=main2c461cb4f8ba2bb93c68.js.map

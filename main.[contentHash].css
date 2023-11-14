@@ -45,7 +45,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 }
 
 /* Reset margins */
@@ -121,25 +121,6 @@ ol[role='list'] {
 
 /* lenis */
 
-html.lenis {
-    height: auto;
-  }
-  
-  .lenis.lenis-smooth {
-    scroll-behavior: auto;
-  }
-  
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-  
-  .lenis.lenis-scrolling iframe {
-    pointer-events: none;
-  }
 
 /* ------------------- */
 /*       UTILITY CLASSES          */
@@ -275,15 +256,15 @@ html, body {
     /* border:1px solid red; */
 }
 
-.loop-three svg{
+/* .loop-three svg{
     position: absolute;
-    bottom: -50%ß;
+    bottom: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 500px;
     z-index: -1;
-    /* background: transparent; */
+    
     
  
 }
@@ -298,7 +279,7 @@ html, body {
         padding: 0;
         transform: scale(2);
     }
-}
+} */
 .carousel{
     position: relative;
     /* margin-bottom:100px; */
