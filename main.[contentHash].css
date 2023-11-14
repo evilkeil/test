@@ -896,14 +896,14 @@ position: relative;
 @media (min-width:394px)and (max-width:760px){
     .about-container {
         /* margin-top: -130px; */
-        transform: translateY(-130px);
+        /* transform: translateY(-130px);÷ */
     }
 }
 
 @media (max-width:393px){
     .about-container {
         transform: translateY(-50px);
-        margin-top: -70px;
+        margin-top: 10px;
     }
 }
 
@@ -1302,7 +1302,7 @@ position: relative;
     z-index: 1;
 }
 .service-card_title{
-    font-size: 1.688rem;
+    font-size: 27.04px;
     text-align: center;
     letter-spacing: 1.08px;
     color: #000000;
@@ -1319,7 +1319,7 @@ position: relative;
     height: 70px;
     padding-bottom: 47.57px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 0.875rem; /* 24px */
+    font-size: 14px; /* 24px */
 }
 
 .service_card{

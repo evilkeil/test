@@ -233,7 +233,7 @@ tl2
   tl3.to(".service-dot", {scale:0.5})
   .to(".service-title", {x:"-50vw", xPercent:-50}, 0)
   .to(".service-dot", {scale:1})
-  .to(".service-main", {y:"-48%"})
+  .to(".service-main", {y:"-40%"})
   .set(".service-main", {backgroundColor:"transparent"})
   .set("#service", {backgroundColor:"#F0F5F5"})
 
@@ -261,4 +261,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=main2c461cb4f8ba2bb93c68.js.map
+//# sourceMappingURL=main83f24718801c99e0009e.js.map
