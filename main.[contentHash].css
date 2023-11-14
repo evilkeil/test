@@ -45,6 +45,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Reset margins */
@@ -117,6 +118,29 @@ ol[role='list'] {
     scroll-behavior: auto !important;
   }
 }
+
+/* lenis */
+
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
 /* ------------------- */
 /*       UTILITY CLASSES          */
 /* ------------------- */
@@ -1810,6 +1834,7 @@ position: relative;
 #contact{
     color: black;
      z-index: 10;
+     position: relative;
 }
 
 /* contact grid */
@@ -1929,7 +1954,7 @@ background-color: var(--section-bg);
 }
 
 #TnC{
-
+background-color: var(--section-bg);
 }
 .terms{
     height: 290px;
@@ -1977,8 +2002,39 @@ background-color: var(--section-bg);
 .terms{
    margin-bottom: 26.93px ;
 }
-/* c
+/* submit btn */
 
+.submit-btn{
+    width: 205px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    
+ }
+.submit-btn:hover{
+    cursor: pointer !important;
+ }
+ .submit-btn-wrapper{
+    z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+#contact{
+    padding-bottom: 50px;
+}
+ #back-to-top-btn img{
+    width: 80px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+ }
+ #back-to-top-btn:hover{
+    cursor: pointer;
+ }
 /* ------------------- */
 /*       footer        */
 /* ------------------- */
