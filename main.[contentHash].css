@@ -895,15 +895,15 @@ position: relative;
 
 @media (min-width:394px)and (max-width:760px){
     .about-container {
-        /* margin-top: -130px; */
-        /* transform: translateY(-130px);÷ */
+        /* margin-top: -350px; */
+        transform: translateY(-140px);
     }
 }
 
 @media (max-width:393px){
     .about-container {
-        transform: translateY(-50px);
-        margin-top: 10px;
+        transform: translateY(-100px);
+        /* margin-top: 10px; */
     }
 }
 
@@ -1204,6 +1204,7 @@ position: relative;
     .service-container{
         /* padding-bottom: 200px;
         padding-top: 200px; */
+        margin-top: 200px;
     }
 }
 
