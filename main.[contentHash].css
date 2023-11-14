@@ -897,7 +897,7 @@ position: relative;
 
 @media (max-width:393px){
     .about-container {
-        transform: translateY(-50px);
+        transform: translateY(-40px);
         margin-top: 20px;
     }
 }
@@ -1755,18 +1755,18 @@ position: relative;
     border-radius: 50%;
     cursor: pointer;
     margin-right: 20px;
-    outline: 2px solid var(--section-bg);
+    border: 2px solid var(--section-bg);
 }
 
 .radio-label:hover .custom-radio,
 [type="radio"]:focus + label .custom-radio{
     transform:scale(1.1);
-    outline: 2px solid var(--section-bg);
+    border: 2px solid var(--section-bg);
 }
 
 [type="radio"]:checked + label .custom-radio{
     background-color: var(--section-bg);
-    outline: 2px solid black;
+    border: 2px solid black;
 }
 /* ------------------- */
 /*       footer        */
