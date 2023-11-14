@@ -1196,7 +1196,7 @@ position: relative;
    padding-top: 50px; */
    /* --clip:circle(100%);
    clip-path: var(--clip); */
-   padding-top: 50px;
+   /* padding-top: 50px; */
    padding-bottom: 50px;
 }
 
@@ -1234,6 +1234,9 @@ position: relative;
         /* border-radius: 50%; */
         /* clip-path: inset(0 0 0 0); */
     }
+}
+.carousel{
+    transform: translateY(-7px);
 }
 
 .service-top{
