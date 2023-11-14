@@ -1949,12 +1949,16 @@ position: relative;
 
 #contact [type="checkbox"]{
 width: 20px;
+height: 20px;
+/* appearance: none; */
+
 aspect-ratio: 1;
 background-color: var(--section-bg);
 }
 
-#TnC{
+#contact #TnC{
 background-color: var(--section-bg) !important;
+width: 20px;
 }
 .label-name_wrapper{
     display: flex;
