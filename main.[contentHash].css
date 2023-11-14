@@ -1103,12 +1103,30 @@ position: relative;
     /* border: 1px solid black; */
 }
 
-.about-bottom-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 500px;
+#about::after{
+content:"" ;
+border-radius: 50%;
+/* border: 1px solid red; */
+width: 100%;
+position: absolute;
+bottom: -50px;
+height: 100px;
+background-color: var(--section-bg);
 }
+
+@media (min-width:750px){
+    #about::after{
+        content:"" ;
+        border-radius: 50%;
+        /* border: 1px solid red; */
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        height: 120px;
+        background-color: var(--section-bg);
+        } 
+}
+
 
 .about-bottom-divider .shape-fill {
     fill: #FFFFFF;
@@ -1739,6 +1757,16 @@ position: relative;
      z-index: 10;
 }
 
+/* contact grid */
+.contact-wrapper{
+    gap: 32.89px;
+}
+.contact-header{
+    grid-column: 2;
+}
+.contact-form{
+    grid-column: 2;
+}
 /* custom radio btn */
 .radio-label{
     display: flex;
