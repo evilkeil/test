@@ -221,7 +221,44 @@
             
         </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <div class="contact-header">
+            <p class="contact-header_jp">お問い合わせ</p>
+            <h3 class="contact-header_title">CONTACT</h3>
+            <p class="contact-header_sub">お仕事の依頼やご相談、パートナーシップなど お気軽にお問い合わせください。 後ほど、担当者より返答をさせていただきます。<br><small>「※」のついた項目は必須となります。</small></p>
+        </div>
+        <form action="" aria-label="お問い合わせ">
+            <div>
+                <label><p class="label-name">お名前<span>※</span></p>
+                    <input type="text" name="お名前" id="your_name" placeholder="山田 太郎" required>
+                </label>
+            </div>
+            <div>
+                <label><p class="label-name">フリガナ<span>※</span></p>
+                    <input type="text" name="フリガナ" id="your_name_kana" placeholder="ヤマダ タロウ" required>
+                </label>
+            </div>
+            <div>
+                <label><p class="label-name">企業・団体名</p>
+                    <input type="text" name="企業・団体名" id="your_company" placeholder="株式会社 FUTURE L DAYS">
+                </label>
+            </div>
+            <div>
+                <label><p class="label-name">メールアドレス<span>※</span></p>
+                    <input type="email" name="メールアドレス" id="your_email" placeholder="info@fld-co.tokyo" required>
+                </label>
+            </div>
+            <div>
+                <p class="label-name">お問い合わせ内容<span>※</span></p>
+                <input type="radio" name="お問い合わせ内容" id="job-contact" value="お仕事のご相談">
+                <label for="job-contact">お仕事のご相談</label>
+                <input type="radio" name="お問い合わせ内容" id="outsource-contact" value="外注・協力のご相談">
+                <label for="outsource-contact">外注・協力のご相談</label>
+                <input type="radio" name="お問い合わせ内容" id="other-contact" value="その他のお問い合わせ">
+                <label for="other-contact">その他のお問い合わせ</label>
+            </div>
+        </form>
+    </section>
     <footer id="footer">
         <small><p class="copyright">Copyright &copy; FUTURE L DAYS All Rights Reserved.</p></small>
     </footer>

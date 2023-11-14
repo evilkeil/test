@@ -251,16 +251,29 @@ html, body {
     /* border:1px solid red; */
 }
 
-.loop-three {
+.loop-three svg{
     position: absolute;
-    top: 50%;
+    bottom: -50%ß;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 1543.3858px;
-    min-height: 701.9944px;
+    width: 1000px;
+    height: 500px;
     z-index: -1;
     /* background: transparent; */
-    /* border: 1px solid red; */
+    
+ 
+}
+.loop-three{
+    transform: translateY(-50);
+}
+@media(max-width:425px){
+    .loop-three{
+        height: 291.3989px;
+        width: 651.3622px;
+        margin: 0;
+        padding: 0;
+        transform: scale(2);
+    }
 }
 .carousel{
     position: relative;
@@ -884,9 +897,8 @@ position: relative;
 
 @media (max-width:393px){
     .about-container {
-        margin-top: -20vh;
         transform: translateY(-50px);
-        margin-top: -8vh;
+        margin-top: 20px;
     }
 }
 
@@ -1524,14 +1536,7 @@ position: relative;
         background: transparent;
     }
 }
-/* @media(min-width:1000px){
-    .carousel,
-.loop-three{
-        margin-bottom: 0px;
-        border:1px solid red;
-        background: transparent;
-    }
-} */
+
 /* ------------------- */
 /*       topics         */
 /* ------------------- */
@@ -1729,7 +1734,7 @@ position: relative;
 /*       contact       */
 /* ------------------- */
 #contact{
-    height: 1000px;
+    color: black;
     /* margin-top: 80px; */
      
 }
