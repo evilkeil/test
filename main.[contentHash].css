@@ -1851,12 +1851,12 @@ position: relative;
 .radio-label:hover .custom-radio,
 [type="radio"]:focus + label .custom-radio{
     transform:scale(1.1);
-    border: 2px solid var(--section-bg);
+   
 }
 
 [type="radio"]:checked + label .custom-radio{
-    background-color: var(--section-bg);
-    border: 2px solid black;
+    background-color: black;
+    border: 3px solid var(--section-bg);
 }
 
 /*contact typography */
