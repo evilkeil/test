@@ -2002,6 +2002,12 @@ margin-bottom: 4.6px;
 .terms{
    margin-bottom: 26.93px ;
 }
+
+.radio-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 /* submit btn */
 
 .submit-btn{
