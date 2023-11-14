@@ -890,7 +890,7 @@ position: relative;
 
 @media (min-width:394px)and (max-width:760px){
     .about-container {
-        margin-top: -20px;
+        margin-top: -80px;
         /* transform: translateY(-130px); */
     }
 }
@@ -898,7 +898,7 @@ position: relative;
 @media (max-width:393px){
     .about-container {
         transform: translateY(-50px);
-        margin-top: 20px;
+        margin-top: -70px;
     }
 }
 
