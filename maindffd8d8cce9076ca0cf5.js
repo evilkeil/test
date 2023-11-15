@@ -254,41 +254,107 @@ tl2
   });
   
   tl4.to(".company-dot", {scale:0.5})
-  // .from(".company-title", {x:"-100vw", xPercent:-100}, 0)
     .to(".company-title", {x:"50vw", xPercent:-50}, 0)
     .to(".company-dot", {scale:1})
     .to(".company-title", {x:"150vw", xPercent:-50}, 0)
-    // .to(".company-dot", {scale:1})
     .to(".company-main", {y:"-300px"})
     .set(".company-main", {backgroundColor:"#F0F5F5"},0)
-    // .set("#company", {backgroundColor:"#F0F5F5"},)
-    // .to(".company-main", {y:"-300px"})
-    // .set(".company-main", {backgroundColor:"transparent"},-5)
+
   
     // tl4.to(".company-dot", {scale:1})
     //   .to(".company-title", {x:"150vw", xPercent:100}, 0)
     //   .to(".company-main", {y:"-300px"})
     //   .set(".company-main", {backgroundColor:"#F0F5F5"},0)
     
+    //topics animations
+
+    //old
 
 let tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: "#topics",
     start: "-=100px",
     scrub: false,
+     //onEnter, onLeave, onEnterBack, onLeaveBack
+    toggleActions: "play none none reset",
     // pin: true,
   //  markers: true
   }
 });
 
-tl5.from(".topics-title", {opacity:0})
-.from(".topic", {y:-20,opacity:0}, 0.5)
+tl5
+.from(".topic", {y:-20,opacity:0},0.1)
   .to(".topic", {'--beforeAnimation': "100%",duration: 3}, )
   
+
+//new
+
+
+// let tl5 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".topics-hero",
+//     start: "top top",
+//     end:"+=200",
+//     scrub: true,
+//     pin: true,
+//    markers: true
+//   }
+// });
+
+// tl5.to(".topics-dot", {scale:1})
+// .to(".topics-title", {x:"-50vw", xPercent:-50}, 0)
+// .from(".topics-title", {opacity:0})
+// .set(".topics-main", {backgroundColor:"#F0F5F5"},0)
+ 
+
+function topicTop() {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".topics-hero",
+      start: "top top",
+      end:"+=200",
+      scrub: true,
+      pin: true,
+    //  markers: true
+    }
+  });
+
+  tl.to(".topics-dot", {scale:1})
+  .to(".topics-title", {x:"-50vw", xPercent:-50}, 0)
+  .from(".topics-title", {opacity:0})
+  .set(".topics-main", {backgroundColor:"#F0F5F5"},0);
+
+  return tl;
+}
+
+
+// function topicBottom(){
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".blog_cover",
+//       start: "-200px top",
+//       end:"+=150px",
+//       // scrub: true,
+//       // pin: true,
+//      markers: true
+//     }
+//   });
+  
+//   tl
+//   .from(".topic", {y:-20,opacity:0}, 0.5)
+//     .to(".topic", {'--beforeAnimation': "100%",duration: 3}, );
+    
+//     return tl;
+// }
+
+const master = gsap.timeline()
+master.add(topicTop())
+  
+    
 
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=mainfd5f9d85edd3ea7d2a0a.js.map
+//# sourceMappingURL=maindffd8d8cce9076ca0cf5.js.map
