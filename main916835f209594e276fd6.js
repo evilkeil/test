@@ -161,6 +161,7 @@ requestAnimationFrame(raf);
   gsap.registerPlugin(ScrollTrigger);
   
 
+ 
 
   //animations for the about section
 
@@ -336,4 +337,4 @@ masterCompany.add(companyTop())
 
 /******/ })()
 ;
-//# sourceMappingURL=main42b892cbb4a7d84346c1.js.map
+//# sourceMappingURL=main916835f209594e276fd6.js.map
