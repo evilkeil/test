@@ -207,14 +207,14 @@ html, body {
     }
 }
 .about-bottom{
-    z-index: 7;
-    opacity: 0.99;
+    z-index: 15;
+    overflow: visible;
 }
 .about-center{
     z-index: 7;
 }
 .about-container{
-    z-index: 7;
+    z-index: 9;
 }
 /* loop at the end of the about section  */
 
@@ -228,17 +228,20 @@ html, body {
 
 .loop-two{
     position: absolute;
+    /* bottom: -400px;
+    right: 40%;
+    z-index: 6; */
     bottom: -400px;
     right: 40%;
-    z-index: 3;
-   
+    z-index: 6;
 }
+
 
 @media (max-width:700px){
     .loop-two{
         position: absolute;
-        bottom: -100px;
-        right: 50%;
+        bottom: -20px;
+        right: 70%;
         transform: scale(2)
     }
 }
@@ -252,6 +255,8 @@ html, body {
        
     }
 }
+
+
 
 /* loop in the service section  */
 .service-main{
@@ -765,7 +770,7 @@ position: relative;
 .about-container{
     /* --clip:circle(63.7332% at 47.8454% 47.8454%); */
     /* background-color: var(--section-bg); */
-    overflow-y: hidden;
+    overflow-y: visible;
     /* clip-path:circle(62.1% at 50% 50%); */
     /* clip-path: var(--clip); */
    
@@ -1098,6 +1103,7 @@ position: relative;
     bottom: -50px;
     height: 100px;
     background-color: var(--section-bg);
+    z-index: -1;
     }
     
     @media (min-width:750px){
