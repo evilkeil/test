@@ -246,15 +246,22 @@ tl2
     scrollTrigger: {
       trigger: ".company-hero", //edit
       start: "top top",
-      scrub: true,
+      end:"+=200",
+      scrub: 3,
       pin: true,
      markers: true
     }
   });
   
-  tl4.to(".company-dot", {scale:1})
-    .to(".company-title", {x:"-100vw", xPercent:-100}, 0)
-    .set(".company-main", {backgroundColor:"#F0F5F5"})
+  tl4.to(".company-dot", {scale:0.5})
+  // .from(".company-title", {x:"-100vw", xPercent:-100}, 0)
+    .to(".company-title", {x:"50vw", xPercent:50}, 0)
+    .to(".company-dot", {scale:1})
+    .to(".company-main", {y:"-300px"})
+    .set(".company-main", {backgroundColor:"#F0F5F5"},0)
+    // .set("#company", {backgroundColor:"#F0F5F5"},)
+    // .to(".company-main", {y:"-300px"})
+    // .set(".company-main", {backgroundColor:"transparent"},-5)
   
 
 //topics section animations
@@ -278,4 +285,4 @@ tl2
 
 /******/ })()
 ;
-//# sourceMappingURL=maine9efb17090ee005c0d94.js.map
+//# sourceMappingURL=mainc6dd78ed498f85e2c62d.js.map

@@ -272,6 +272,7 @@ html, body {
 /* loop in the company section */
 .company-main{
    position: relative;
+   /* background-color: var(--section-bg); */
 }
 .loop-five {
    
@@ -1582,7 +1583,7 @@ position: relative;
 /* ------------------- */
 
 #topics{
-    margin-top: 80px; 
+    margin-top: 150px; 
     background-color: var(--section-bg);
     color: black;
     display: flex;
@@ -1592,8 +1593,32 @@ position: relative;
     gap: 37.16px;
     padding-bottom: 80px;
     padding-top: 65px;
+
+    position: relative;
 }
 
+#topics::after{
+    content:"" ;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    height: 100px;
+    background-color: var(--section-bg);
+    /* border: 1px solid red; */
+    }
+    #topics::before{
+        content:"" ;
+        border-radius: 50%;
+        /* border: 1px solid red; */
+        width: 100%;
+        position: absolute;
+        top: -50px;
+        height: 100px;
+        background-color: var(--section-bg);
+        /* border: 1px solid red; */
+        }
 .topics-title{
     /* font-size: 8vmin;
     font-weight: bold;
@@ -1678,7 +1703,7 @@ position: relative;
     background-color:#F0F5F5;
   } */
   
-  .company-title{
+  /* .company-title{
     font-size: 8vmin;
     font-weight: bold;
     margin:0;
@@ -1687,8 +1712,19 @@ position: relative;
     left:100%;
     top:50%;
     transform:translateY(-50%);
+  } */
+  .company-title{
+    font-size: 8vmin;
+    font-weight: bold;
+    margin:0;
+    white-space:nowrap;
+    position:absolute;
+    right:100%;
+    top:50%;
+    transform:translateY(-50%);
+    /* transform: translateX(-100vh); */
   }
-  
+
   h1, h2 {
       font-family:Prompt, sans-serif;
   }
@@ -1843,36 +1879,38 @@ position: relative;
   }
 #company{
     position: relative;
+    
 }
 
 .company-hero{
     /* margin-top: 80px; */
 }
-  #company::after{
+  .company-main::after{
     content:"" ;
     border-radius: 50%;
     /* border: 1px solid red; */
     width: 100%;
     position: absolute;
-    bottom: 50px;
+    right: 0;
+    bottom: -40px;
     height: 100px;
     background-color: var(--section-bg);
     /* border: 1px solid red; */
     z-index: -1;
+    /* border: 1px solid red; */
     }
-    
+/*     
     @media (min-width:750px){
         #company::after{
             content:"" ;
             border-radius: 50%;
-            /* border: 1px solid red; */
             width: 100%;
             position: absolute;
             bottom: 35px;
             height: 120px;
             background-color: var(--section-bg);
             } 
-    }
+    } */
     
 
 /* ------------------- */
@@ -1882,6 +1920,7 @@ position: relative;
     color: black;
      z-index: 10;
      position: relative;
+     margin-top: -300px;
 }
 
 /* contact grid */
