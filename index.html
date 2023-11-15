@@ -16,7 +16,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
-<script defer src="main916835f209594e276fd6.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
+<script defer src="main8d6b69393e0b2e95c535.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
 <body>
    
     <section id="nav" style="box-shadow: none">
@@ -69,7 +69,7 @@
         </div>
         <div class="company-name">
             <h3 id="company-name">FUTURE L DAYS INC.</h3>
-            <img src="loop1@2x.png" alt="" class="loop-one">
+            <img src="loop1@2x.png" alt="" class="loop-one" aria-hidden='true'>
         </div>
     </section>
     <section id="about">
@@ -90,7 +90,7 @@
             </div>    
         </div>
         <div class="about-container main-grid">
-            <img src="loop1@2x.png" alt="" class="loop-two">
+            <img src="loop1@2x.png" alt="" class="loop-two" aria-hidden='true'>
             <div class="about-center">
                 <ul class="about-us-list" role="list">
                     <li class="about-us-list-item center"><p>業界の枠を超え<br>人と人とをつなぐ<br>トータルエージェント<br>カンパニー</p></li>
@@ -186,7 +186,7 @@
                 </div> 
         </div>
         <div class="topics-main">
-            <img src="mebius-warp.svg" alt="" class="loop-six">
+            <img src="mebius-warp.svg" alt="" class="loop-six" aria-hidden='true'>
             <div class="blog_cover">
                 <div class="topic topic_new">
                    <p class="blog">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
@@ -247,7 +247,7 @@
                         <p class="info-description"></p>
                     </li>
                 </ul>
-                <img src="mebius-warp.svg" alt="" class="loop-five">
+                <img src="mebius-warp.svg" alt="" class="loop-five" aria-hidden='true'>
             </div>
         </div>
     </section>
@@ -306,8 +306,33 @@
                     </label>
                 </div>
                 <div class="terms-and-conditions_agree-wrapper">
-                    <input type="checkbox" name="terms-and-conditions_agree" id="TnC">
-                    <label id="agree_label" for="TnC">個人情報の取り扱いについて同意する</label>
+                    <input type="checkbox" name="terms-and-conditions_agree" id="TnC" class="sr-only" required>
+                    <label id="agree_label" for="TnC">
+                        <svg class="checked"version="1.1" id="_レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 25.5 23" style="enable-background:new 0 0 25.5 23;" xml:space="preserve">
+                   <style type="text/css">
+                       .checkbox-box { fill: #F0F5F5; }
+                       .checkbox-check { fill: #231815; }
+                   </style>
+                   <g id="design">
+                       <rect y="3" class="checkbox-box" width="20" height="20"/>
+                       <path class="checkbox-check" d="M10.8,15.7L10.8,15.7c-0.3,0-0.5-0.1-0.7-0.3L4.1,9.5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.2,5.2l13-13
+                           c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L11.4,15.4C11.3,15.6,11,15.7,10.8,15.7L10.8,15.7z"/>
+                   </g>
+                   </svg>
+                   <svg  class="unchecked" version="1.1" id="_レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F0F5F5;}
+</style>
+<g id="design">
+	<rect class="st0" width="20" height="20"/>
+</g>
+</svg>
+
+
+                        <p>個人情報の取り扱いについて同意する</p>
+                    </label>
                 </div>
                 
                 <div class="terms-wrapper">

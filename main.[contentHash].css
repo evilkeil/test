@@ -148,7 +148,15 @@ ol[role='list'] {
         grid-template-columns: 1fr 85% 1fr;
     } 
 }
-
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
 .cursor-pointer:hover{
     cursor: pointer;
 }
@@ -2113,18 +2121,37 @@ position: relative;
 }
 
 #contact [type="checkbox"]{
-width: 20px;
-height: 20px;
-/* appearance: none; */
-
+display: none;
+pointer-events: none;
 aspect-ratio: 1;
 background-color: var(--section-bg);
 }
+#agree_label{
 
-#contact #TnC{
-background-color: var(--section-bg) !important;
-width: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  8.84px;
 }
+#agree_label p{
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#agree_label svg{
+    width: 20px;
+    height: 20px;
+}
+
+.checked{
+    display: none;
+}
+
 .label-name_wrapper{
     display: flex;
     align-items: center;
