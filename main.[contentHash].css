@@ -119,8 +119,20 @@ ol[role='list'] {
   }
 }
 
-/* lenis */
-
+/* override ios apple mail meddling */
+*[x-apple-data-detectors],  /* iOS */
+    .x-gmail-data-detectors,    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
 
 /* ------------------- */
 /*       UTILITY CLASSES          */
@@ -1750,7 +1762,10 @@ position: relative;
     color:black;
     padding-bottom: 0;
   }
-  
+.info_number[x-apple-data-detectors]{
+    color: inherit !important;
+    text-decoration: none !important;
+}
   .title-wrapper{
       position: relative;
   }

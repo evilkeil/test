@@ -238,34 +238,8 @@ tl2
   .set(".service-main", {backgroundColor:"transparent"})
   .set("#service", {backgroundColor:"#F0F5F5"})
 
-   //animations for the company section
-
-
-
-  //  let tl4 = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: ".company-hero", //edit
-  //     start: "top top",
-  //     end:"+=200",
-  //     scrub: 3,
-  //     pin: true,
-  //    markers: false
-  //   }
-  // });
   
-  // tl4.to(".company-dot", {scale:0.5})
-  //   .to(".company-title", {x:"50vw", xPercent:-50}, 0)
-  //   .to(".company-dot", {scale:1})
-  //   .to(".company-title", {x:"150vw", xPercent:-50}, 0)
-  //   .to(".company-main", {y:"-300px"})
-  //   .set(".company-main", {backgroundColor:"#F0F5F5"},0)
 
-  
-    // tl4.to(".company-dot", {scale:1})
-    //   .to(".company-title", {x:"150vw", xPercent:100}, 0)
-    //   .to(".company-main", {y:"-300px"})
-    //   .set(".company-main", {backgroundColor:"#F0F5F5"},0)
-    
     //topics animations
 
     //old
@@ -311,7 +285,7 @@ const master = gsap.timeline()
 master.add(topicTop())
   
    
-//company section animations mk2
+//company section animations 
 
 let tl4 = gsap.timeline({
   scrollTrigger: {
@@ -357,4 +331,4 @@ masterCompany.add(companyTop())
 
 /******/ })()
 ;
-//# sourceMappingURL=main4642ec0f945ad5b81059.js.map
+//# sourceMappingURL=maina05dfe70567bb9b06feb.js.map
