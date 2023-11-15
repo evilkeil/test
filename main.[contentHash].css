@@ -222,12 +222,15 @@ html, body {
     position: relative;
     /* overflow: hidden; */
 }
+.about-container{
+    
+}
 
 .loop-two{
     position: absolute;
     bottom: -400px;
     right: 40%;
-    z-index: 6;
+    z-index: 3;
    
 }
 
@@ -256,30 +259,7 @@ html, body {
     /* border:1px solid red; */
 }
 
-/* .loop-three svg{
-    position: absolute;
-    bottom: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 500px;
-    z-index: -1;
-    
-    
- 
-}
-.loop-three{
-    transform: translateY(-50);
-}
-@media(max-width:425px){
-    .loop-three{
-        height: 291.3989px;
-        width: 651.3622px;
-        margin: 0;
-        padding: 0;
-        transform: scale(2);
-    }
-} */
+
 .carousel{
     position: relative;
     /* margin-bottom:100px; */
@@ -1602,9 +1582,80 @@ position: relative;
 /* ------------------- */
 
 #topics{
-    height: 1000px;
-    margin-top: 80px;
+    margin-top: 80px; 
     background-color: var(--section-bg);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 37.16px;
+    padding-bottom: 80px;
+    padding-top: 65px;
+}
+
+.topics-title{
+    /* font-size: 8vmin;
+    font-weight: bold;
+    margin:0;
+    white-space:nowrap; */
+    /* position:absolute; */
+    /* left:100%; */
+    /* top:50%; */
+    /* transform:translateY(-50%); */
+    /* border: 1px solid black; */
+  }
+  /* gird layout */
+  .topics-main{
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.56px;
+  }
+
+  .topic{
+    width: 350px;
+    height: 118.82px;
+    /* border: 1px solid red; */
+    padding: 25px;
+    position: relative;
+  }
+
+  .blog{
+    height: 50.47px;
+    overflow: hidden;
+    font-size: 14px;
+
+  }
+
+  .blog_date{
+    color: #C8C8C8;
+    font-size: 14px;
+  }
+
+  .topic_new{
+    background-color: white;
+  }
+
+  .topic::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:  rgba(230, 235, 345,0.6); ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}
+.topic_last::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:  rgba(230, 235, 345,0.6); ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
 }
 /* ------------------- */
 /*       company       */
@@ -1653,7 +1704,7 @@ position: relative;
       position: relative;
   }
   .title_eng{
-      font-size: 5rem; /*80px*/
+      font-size: 80px; /*80px*/
       font-family: a-otf-ud-shin-go-con80-pr6n, sans-serif;
       font-weight: 300;
       font-style: normal;
@@ -1792,6 +1843,10 @@ position: relative;
   }
 #company{
     position: relative;
+}
+
+.company-hero{
+    /* margin-top: 80px; */
 }
   #company::after{
     content:"" ;
