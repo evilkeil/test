@@ -1824,7 +1824,7 @@ position: relative;
   .company-info{
       display: grid;
       place-content: center;
-      margin-bottom: 100px;
+      /* margin-bottom: 100px; */
   }
   .info-list{
       padding: 0;
@@ -1948,21 +1948,33 @@ position: relative;
 }
 .company-dot{
     z-index: -2;
+    /* width:142vmax;
+    height:142vmax; */
+    width:110vmax;
+    height:110vmax;
 }
-  .company-main::after{
+
+@media (min-width:764px){
+    .company-dot{
+        z-index: -2;
+        width:142vmax;
+        height:142vmax;
+    }
+}
+  /* .company-main::after{
     content:"" ;
     border-radius: 50%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     position: absolute;
     right: 0;
     bottom: -40px;
     height: 100px;
     background-color: var(--section-bg);
-    /* border: 1px solid red; */
+    
     z-index: -1;
-    /* border: 1px solid red; */
-    }
+
+    } */
 /*     
     @media (min-width:750px){
         #company::after{

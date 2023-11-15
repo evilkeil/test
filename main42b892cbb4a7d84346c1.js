@@ -299,8 +299,13 @@ let tl4 = gsap.timeline({
   }
 });
 
-// tl4
-// .from(".company", {y:-20,opacity:0},0.1)
+tl4
+.from(".company_name", {x:-60 , opacity:0},0.1)
+.from(".company_year", {x:60 , opacity:0},0.1)
+.from(".company_address", {x:-60 , opacity:0},0.1)
+.from(".company_tel", {x:60 , opacity:0},0.1)
+.from(".company_mail", {x:-60 , opacity:0},0.1)
+
   
 
 function companyTop() {
@@ -331,4 +336,4 @@ masterCompany.add(companyTop())
 
 /******/ })()
 ;
-//# sourceMappingURL=main6e705bf29c16e7953954.js.map
+//# sourceMappingURL=main42b892cbb4a7d84346c1.js.map
