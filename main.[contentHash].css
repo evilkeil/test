@@ -2206,6 +2206,7 @@ margin-bottom: 4.6px;
     display: flex;
     align-items: center;
     gap: 8.84px;
+    margin-bottom:58.06px;
 }
 .terms-title{
     margin-bottom: 11.8px;
@@ -2218,6 +2219,10 @@ margin-bottom: 4.6px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.your_inquiry-wrapper{
+    margin-bottom: 47.97px;
 }
 /* submit btn */
 
