@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
-  console.log(e);
+  // console.log(e);
 });
 
 function raf(time) {
@@ -356,8 +356,9 @@ checkbox.addEventListener('click', function() {
     }
 });
 
+
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main8d6b69393e0b2e95c535.js.map
+//# sourceMappingURL=mainb444f6a9f77e540c2b43.js.map
