@@ -269,7 +269,7 @@ function topicTop() {
       end:"+=200",
       scrub: true,
       // pin: true,
-     markers: true
+    //  markers: true
     }
   });
 
@@ -311,7 +311,7 @@ function companyTop() {
       end:"+=200",
       scrub: true,
       // pin: true,
-     markers: true
+    //  markers: true
     }
   });
 
@@ -331,4 +331,4 @@ masterCompany.add(companyTop())
 
 /******/ })()
 ;
-//# sourceMappingURL=maina05dfe70567bb9b06feb.js.map
+//# sourceMappingURL=main41c6e397e098f8925e42.js.map

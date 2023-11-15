@@ -311,6 +311,32 @@ html, body {
     
     }
 }
+
+/* loop in topics */
+.topics-main{
+    position: relative;
+    /* background-color: var(--section-bg); */
+    z-index: -1;
+ }
+ .loop-six {
+    
+     width: 321.2738px;
+     position: absolute;
+     top: -350px;
+    left: -130px;
+ 
+ }
+ 
+ @media (max-width:820px){
+     .loop-six {
+    
+         width: 321.2738px;
+         position: absolute;
+         bottom: -40%;
+        right: -100px;
+     
+     }
+ }
 /* additional resets etc */
 
 body {
