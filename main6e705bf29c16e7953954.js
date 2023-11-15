@@ -257,7 +257,7 @@ let tl5 = gsap.timeline({
 });
 
 tl5
-.from(".topic", {y:-20,opacity:0},0.1)
+.from(".topic", {y:-20,opacity:0,duration:1.5},0.1)
   .to(".topic", {'--beforeAnimation': "100%",duration: 3}, )
   
 
@@ -331,4 +331,4 @@ masterCompany.add(companyTop())
 
 /******/ })()
 ;
-//# sourceMappingURL=main41c6e397e098f8925e42.js.map
+//# sourceMappingURL=main6e705bf29c16e7953954.js.map
