@@ -1637,6 +1637,7 @@ position: relative;
   }
 
   .topic{
+    --beforeAnimation: 0;
     width: 350px;
     height: 118.82px;
     /* border: 1px solid red; */
@@ -1662,9 +1663,10 @@ position: relative;
 
   .topic::before{
     content: "";
-    width: 100%;
+    /* width: 100%; */
+    width: var(--beforeAnimation);
     height: 3px;
-    background-color:  rgba(230, 235, 345,0.6); ;
+    background-color:  rgba(230, 235, 345,1); ;
     position: absolute;
     top: 0;
     left: 0;
@@ -1673,9 +1675,9 @@ position: relative;
 }
 .topic_last::after{
     content: "";
-    width: 100%;
+    width: var(--beforeAnimation);
     height: 3px;
-    background-color:  rgba(230, 235, 345,0.6); ;
+    background-color:  rgba(230, 235, 345,1); ;
     position: absolute;
     bottom: 0;
     left: 0;
