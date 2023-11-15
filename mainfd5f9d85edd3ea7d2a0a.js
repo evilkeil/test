@@ -255,16 +255,21 @@ tl2
   
   tl4.to(".company-dot", {scale:0.5})
   // .from(".company-title", {x:"-100vw", xPercent:-100}, 0)
-    .to(".company-title", {x:"50vw", xPercent:50}, 0)
+    .to(".company-title", {x:"50vw", xPercent:-50}, 0)
     .to(".company-dot", {scale:1})
+    .to(".company-title", {x:"150vw", xPercent:-50}, 0)
+    // .to(".company-dot", {scale:1})
     .to(".company-main", {y:"-300px"})
     .set(".company-main", {backgroundColor:"#F0F5F5"},0)
     // .set("#company", {backgroundColor:"#F0F5F5"},)
     // .to(".company-main", {y:"-300px"})
     // .set(".company-main", {backgroundColor:"transparent"},-5)
   
-
-//topics section animations
+    // tl4.to(".company-dot", {scale:1})
+    //   .to(".company-title", {x:"150vw", xPercent:100}, 0)
+    //   .to(".company-main", {y:"-300px"})
+    //   .set(".company-main", {backgroundColor:"#F0F5F5"},0)
+    
 
 let tl5 = gsap.timeline({
   scrollTrigger: {
@@ -286,4 +291,4 @@ tl5.from(".topics-title", {opacity:0})
 
 /******/ })()
 ;
-//# sourceMappingURL=main92c0e8d35bc707ee108a.js.map
+//# sourceMappingURL=mainfd5f9d85edd3ea7d2a0a.js.map
