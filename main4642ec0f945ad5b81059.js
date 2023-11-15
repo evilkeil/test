@@ -242,23 +242,23 @@ tl2
 
 
 
-   let tl4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".company-hero", //edit
-      start: "top top",
-      end:"+=200",
-      scrub: 3,
-      pin: true,
-     markers: false
-    }
-  });
+  //  let tl4 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".company-hero", //edit
+  //     start: "top top",
+  //     end:"+=200",
+  //     scrub: 3,
+  //     pin: true,
+  //    markers: false
+  //   }
+  // });
   
-  tl4.to(".company-dot", {scale:0.5})
-    .to(".company-title", {x:"50vw", xPercent:-50}, 0)
-    .to(".company-dot", {scale:1})
-    .to(".company-title", {x:"150vw", xPercent:-50}, 0)
-    .to(".company-main", {y:"-300px"})
-    .set(".company-main", {backgroundColor:"#F0F5F5"},0)
+  // tl4.to(".company-dot", {scale:0.5})
+  //   .to(".company-title", {x:"50vw", xPercent:-50}, 0)
+  //   .to(".company-dot", {scale:1})
+  //   .to(".company-title", {x:"150vw", xPercent:-50}, 0)
+  //   .to(".company-main", {y:"-300px"})
+  //   .set(".company-main", {backgroundColor:"#F0F5F5"},0)
 
   
     // tl4.to(".company-dot", {scale:1})
@@ -287,35 +287,15 @@ tl5
   .to(".topic", {'--beforeAnimation': "100%",duration: 3}, )
   
 
-//new
-
-
-// let tl5 = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".topics-hero",
-//     start: "top top",
-//     end:"+=200",
-//     scrub: true,
-//     pin: true,
-//    markers: true
-//   }
-// });
-
-// tl5.to(".topics-dot", {scale:1})
-// .to(".topics-title", {x:"-50vw", xPercent:-50}, 0)
-// .from(".topics-title", {opacity:0})
-// .set(".topics-main", {backgroundColor:"#F0F5F5"},0)
- 
-
 function topicTop() {
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".topics-hero",
-      start: "top top",
+      trigger: "#topics",
+      start: "-=300px top",
       end:"+=200",
       scrub: true,
-      pin: true,
-    //  markers: true
+      // pin: true,
+     markers: true
     }
   });
 
@@ -327,34 +307,54 @@ function topicTop() {
   return tl;
 }
 
-
-// function topicBottom(){
-//   let tl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".blog_cover",
-//       start: "-200px top",
-//       end:"+=150px",
-//       // scrub: true,
-//       // pin: true,
-//      markers: true
-//     }
-//   });
-  
-//   tl
-//   .from(".topic", {y:-20,opacity:0}, 0.5)
-//     .to(".topic", {'--beforeAnimation': "100%",duration: 3}, );
-    
-//     return tl;
-// }
-
 const master = gsap.timeline()
 master.add(topicTop())
   
-    
+   
+//company section animations mk2
 
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#company",
+    start: "-=100px",
+    scrub: false,
+     //onEnter, onLeave, onEnterBack, onLeaveBack
+    toggleActions: "play none none reset",
+    // pin: true,
+  //  markers: true
+  }
+});
 
+// tl4
+// .from(".company", {y:-20,opacity:0},0.1)
+  
+
+function companyTop() {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#company",
+      start: "-=400px top",
+      end:"+=200",
+      scrub: true,
+      // pin: true,
+     markers: true
+    }
+  });
+
+  tl.to(".company-dot", {scale:1})
+  .to(".company-title", {x:"-50vw", xPercent:-50}, 0)
+  .from(".company-title", {opacity:0})
+  .set(".company-main", {backgroundColor:"#F0F5F5"},0);
+
+  return tl;
+}
+
+const masterCompany = gsap.timeline()
+masterCompany.add(companyTop())
+  
+   
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=maindffd8d8cce9076ca0cf5.js.map
+//# sourceMappingURL=main4642ec0f945ad5b81059.js.map
