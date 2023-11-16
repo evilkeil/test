@@ -2287,7 +2287,7 @@ position: relative;
     color: black;
      z-index: 10;
      position: relative;
-     margin-top: 1000px;
+     margin-top: -50px;
 }
 @media (max-width:750px){
     #contact{
@@ -2300,7 +2300,7 @@ position: relative;
 
 /* contact grid */
 .contact-wrapper{
-    
+    /* border: 1px solid red; */
     padding:5vw;
     gap: 32.89px;
     /* new */
@@ -2316,6 +2316,29 @@ position: relative;
     /* grid-column: 2; */
     /* margin: 0 auto; */
     /* border: 1px solid red; */
+}
+.contact-header_sub{
+    line-height: 28px;
+}
+
+@media (min-width:750px){
+    .contact-wrapper{
+        gap: 114px;
+    }
+    .contact-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .contact-top_left{
+        width: 350px;
+        /* border: 1px solid green; */
+    }
+    .contact-header_sub{
+        width:390px ;
+        line-height: 35px;
+    }
 }
 /* custom radio btn */
 .radio-label{
@@ -2395,10 +2418,6 @@ position: relative;
     color:black
 }
 
-#temp{
-    width: 20px;
-    aspect-ratio: 1;
-}
 #agree_label{
     width: 100%;
     font-size: 16px;
@@ -2406,6 +2425,52 @@ position: relative;
 .terms{
     font-size: 14px;
     background-color: var(--section-bg);
+}
+
+.label-name{
+    font-size: 16px;
+}
+
+@media (min-width:750px){
+    .contact-header_jp{
+        font-size: 30px;
+        margin-bottom: 6.21px;
+    }
+    .contact-header_title{
+        font-size:72.05px;
+        letter-spacing: 2.88px;
+    }
+    .contact-form{
+        font-size: 18px;
+        letter-spacing: 0.72px;
+    }
+    
+    .contact-header_sub{
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .contact-header_sub small{
+        font-size: 16px;
+    }
+    .radio-label{
+        font-size: 18px;
+        
+    }
+    
+    .terms-title{
+        font-size: 18px;
+    }
+    
+    #agree_label{
+        font-size: 18px;
+    }
+    .terms{
+        font-size: 18px;
+        background-color: var(--section-bg);
+    }
+    .label-name{
+        font-size: 18px;
+    }
 }
 
 /* contact form other styles */
@@ -2476,6 +2541,65 @@ background-color: var(--section-bg);
 margin-bottom: 26.93px;
 border-radius: 10px;
 }
+
+@media (min-width:750px){
+    #contact input{
+        height: 60px;
+        width: 660px;
+    }
+ 
+    #agree_label p{
+        font-size: 18px;
+        letter-spacing: 0.72px;
+    }
+    .contact-item{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-form{
+        /* border: 1px solid red; */
+        width: 856.65px;
+    }
+    
+    .label-name_wrapper{
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .terms{
+        overflow: scroll !important;
+        padding: 0;
+        /* width: 600px; */
+        height: 246px;
+       /* border: 1px solid red; */
+    }
+    .terms-padding{
+    overflow: hidden;
+    padding-left:30px;
+    padding-top:38.19px;
+    padding-right: 30px ;
+    padding-bottom: 38.19px;
+    height: 290px;
+    width: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 67px;
+    /* border: 1px solid red; */
+    }
+    .terms-wrapper{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
 /* contact spacing and margins */
 .contact-wrapper{
     margin-bottom: 32.89px;
@@ -2530,10 +2654,89 @@ margin-bottom: 4.6px;
 .your_inquiry-wrapper{
     margin-bottom: 47.97px;
 }
+
+@media (min-width:750px){
+    .contact-wrapper{
+        margin-bottom: 0px;
+        
+    }
+    .contact-header_jp{
+    margin-bottom: 6.21px;
+    
+    }
+    
+    .contact-header_title{
+        margin-bottom: 50px;
+    }
+    .name-wrapper{
+        margin-bottom: 39px;
+    }
+    
+    .name_kana-wrapper{
+        margin-bottom: 39px;
+    }
+    .your_company-wrapper{
+        margin-bottom: 39px;
+    }
+    
+    .email-wrapper{
+        margin-bottom: 55px;
+        
+    }
+    .label-name{
+        margin-bottom: 0px;
+        display: grid;
+        place-content: center;
+    }
+    .inquiry-details{
+        margin-bottom: 37.73px;
+        flex-direction: row;
+
+    }
+    .star{
+        display: none;
+    }
+    .required_item{
+        position: relative;
+    }
+    .required_item::after{
+        content: "※";
+        position: absolute;
+        top:-10px;
+        right: -5px;
+        height: 15px;
+        width: 10px;
+        font-size: 10px;
+    }
+    .terms-and-conditions_agree-wrapper{
+        display: grid;
+       place-content: center;
+        gap: 8.84px;
+        margin-bottom:66px;
+    }
+    .terms-title{
+        margin-bottom: 11.8px;
+        text-align: center;
+        align-self: flex-start;
+    }
+    
+    .radio-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .your_inquiry-wrapper{
+        margin-bottom: 47.62px;
+
+    }
+     
+}
+
 /* submit btn */
 
 .submit-btn{
-    width: 205px;
+    width: 200px;
     height: 60px;
     background-color: transparent;
     border: none;
@@ -2563,6 +2766,8 @@ margin-bottom: 4.6px;
  #back-to-top-btn:hover{
     cursor: pointer;
  }
+
+ 
 /* ------------------- */
 /*       footer        */
 /* ------------------- */

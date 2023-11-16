@@ -317,7 +317,7 @@ function companyTop() {
       end:"+=200",
       scrub: true,
       // pin: true,
-     markers: true
+    //  markers: true
     }
   });
 
@@ -361,4 +361,4 @@ checkbox.addEventListener('click', function() {
 
 /******/ })()
 ;
-//# sourceMappingURL=main332ef3655c0f7f3757d8.js.map
+//# sourceMappingURL=mainb0d0027a3f340bc84dd1.js.map

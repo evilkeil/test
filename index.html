@@ -16,7 +16,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
-<script defer src="main332ef3655c0f7f3757d8.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
+<script defer src="mainb0d0027a3f340bc84dd1.js"></script><link href="main.%5BcontentHash%5D.css" rel="stylesheet"></head>
 <body>
    
     <section id="nav" style="box-shadow: none">
@@ -254,42 +254,44 @@
     </section>
     <section id="contact">
         <!-- <div class="contact-wrapper main-grid"> -->
-            <div class="contact-wrapper ">
+            <div class="contact-wrapper">
             <div class="contact-header">
-                <p class="contact-header_jp">お問い合わせ</p>
-                <h3 class="contact-header_title">CONTACT</h3>
+                <div class="contact-top_left">
+                    <p class="contact-header_jp">お問い合わせ</p>
+                    <h3 class="contact-header_title">CONTACT</h3>
+                </div>
                 <p class="contact-header_sub">お仕事の依頼やご相談、パートナーシップなど お気軽にお問い合わせください。 後ほど、担当者より返答をさせていただきます。<br><small>「※」のついた項目は必須となります。</small></p>
             </div>
             <form action="" aria-label="お問い合わせ" class="contact-form">
                 <div class="name-wrapper">
-                    <label><div class="label-name_wrapper">
+                    <label class="contact-item"><div class="label-name_wrapper">
                         <p class="label-name">お名前</p><p class="star">※</p>
                     </div>
                         <input type="text" name="お名前" id="your_name" placeholder="山田 太郎" required>
                     </label>
                 </div>
                 <div class="name_kana-wrapper">
-                    <label><div class="label-name_wrapper">
-                        <p class="label-name">フリガナ</p><p class="star">※</p>
+                    <label class="contact-item"><div class="label-name_wrapper">
+                        <p class="label-name required_item">フリガナ</p><p class="star">※</p>
                     </div>
                         <input type="text" name="フリガナ" id="your_name_kana" placeholder="ヤマダ タロウ" required>
                     </label>
                 </div>
                 <div class="your_company-wrapper">
-                    <label><p class="label-name">企業・団体名</p>
+                    <label class="contact-item"><p class="label-name">企業・団体名</p>
                         <input type="text" name="企業・団体名" id="your_company" placeholder="株式会社 FUTURE L DAYS">
                     </label>
                 </div>
                 <div class="email-wrapper">
-                    <label><div class="label-name_wrapper">
-                        <p class="label-name">メールアドレス</p><p class="star">※</p>
+                    <label class="contact-item"><div class="label-name_wrapper">
+                        <p class="label-name required_item">メールアドレス</p><p class="star">※</p>
                     </div>
                         <input type="email" name="メールアドレス" id="your_email" placeholder="info@fld-co.tokyo" required>
                     </label>
                 </div>
                 <div class="inquiry-details">
-                    <div class="label-name_wrapper">
-                        <p class="label-name">お問い合わせ内容</p><p class="star">※</p>
+                    <div class="label-name_wrapper inquiry-details_name">
+                        <p class="label-name required_item">お問い合わせ内容</p><p class="star">※</p>
                     </div>
                     <div class="radio-wrapper">
                         <input type="radio" name="お問い合わせ内容" id="job-contact" value="お仕事のご相談">
@@ -301,8 +303,8 @@
                     </div>
                 </div>
                 <div class="your_inquiry-wrapper">
-                    <label><div class="label-name_wrapper">
-                        <p class="label-name">ご用件</p><p class="star">※</p>
+                    <label class="contact-item"><div class="label-name_wrapper">
+                        <p class="label-name required_item">ご用件</p><p class="star">※</p>
                     </div>
                         <input type="text" name="ご用件" id="your_inquiry" placeholder="ご用件" required>
                     </label>
