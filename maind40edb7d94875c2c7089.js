@@ -266,18 +266,18 @@ function topicTop() {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#topics",
-      start: "-=300px top",
+      start: "-=400px top",
       end:"+=200",
       scrub: true,
       // pin: true,
-    //  markers: true
+     markers: true
     }
   });
 
   tl.to(".topics-dot", {scale:1})
   .to(".topics-title", {x:"-50vw", xPercent:-50}, 0)
   .from(".topics-title", {opacity:0})
-  .set(".topics-main", {backgroundColor:"#F0F5F5"},0);
+  // .set(".topics-main", {backgroundColor:"#F0F5F5"},0);
 
   return tl;
 }
@@ -361,4 +361,4 @@ checkbox.addEventListener('click', function() {
 
 /******/ })()
 ;
-//# sourceMappingURL=maind6c5d08a517f113f57ed.js.map
+//# sourceMappingURL=maind40edb7d94875c2c7089.js.map
