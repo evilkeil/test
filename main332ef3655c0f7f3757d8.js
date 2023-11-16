@@ -270,7 +270,7 @@ function topicTop() {
       end:"+=200",
       scrub: true,
       // pin: true,
-     markers: true
+    //  markers: true
     }
   });
 
@@ -313,18 +313,18 @@ function companyTop() {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#company",
-      start: "-=400px top",
+      start: "-=450px top",
       end:"+=200",
       scrub: true,
       // pin: true,
-    //  markers: true
+     markers: true
     }
   });
 
   tl.to(".company-dot", {scale:1})
   .to(".company-title", {x:"-50vw", xPercent:-50}, 0)
   .from(".company-title", {opacity:0})
-  .set(".company-main", {backgroundColor:"#F0F5F5"},0);
+  // .set(".company-main", {backgroundColor:"#F0F5F5"},0);
 
   return tl;
 }
@@ -361,4 +361,4 @@ checkbox.addEventListener('click', function() {
 
 /******/ })()
 ;
-//# sourceMappingURL=maind40edb7d94875c2c7089.js.map
+//# sourceMappingURL=main332ef3655c0f7f3757d8.js.map

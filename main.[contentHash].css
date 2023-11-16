@@ -1997,10 +1997,16 @@ position: relative;
       /* border: 1px solid red; */
       /* margin-bottom: 100px; */
   }
+
+  @media (min-width:750px) {
+    .company-info{
+        transform: translateY(-100px);
+    }
+  }
   .info-list{
       width: 100%;
       /* margin: 0 auto; */
-      margin-left: 10px;
+      /* margin-left: 10px; */
       z-index: 10; 
   }
   .info-list-item{
@@ -2012,7 +2018,7 @@ position: relative;
   }
   
   .info-title{
-      font-size: 1rem;
+      font-size: 16px;
       text-align: left;
       font-family: 'Noto Sans JP', sans-serif;
       display: flex;
@@ -2023,7 +2029,7 @@ position: relative;
       
   }
   .info-description{
-      font-size: 1rem;
+    font-size: 16px;
       text-align: left;
       font-family: 'Noto Sans JP', sans-serif;
       display: flex;
@@ -2106,7 +2112,7 @@ position: relative;
   }
 #company{
     position: relative;
-    transform: translateY(350px);
+    transform: translateY(50px);
     margin-top: -100px;
 }
 @media (max-width:750px){
@@ -2138,7 +2144,7 @@ position: relative;
     .company-dot{
         z-index: -2;
         width:142vmax;
-        height:142vmax;
+        height:70vmax;
     }
 }
   /* .company-main::after{
