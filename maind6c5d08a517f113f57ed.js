@@ -193,7 +193,7 @@ requestAnimationFrame(raf);
   tl1.to(".about-dot", {scale:1})
   .from(".about-top_left", {opacity:0},)
   .from(".about-top_right", {opacity:0}, 1)
-    .set("#about", {backgroundColor:"#F0F5F5"});
+    // .set("#about", {backgroundColor:"#F0F5F5"});
    
 
 //about ul
@@ -361,4 +361,4 @@ checkbox.addEventListener('click', function() {
 
 /******/ })()
 ;
-//# sourceMappingURL=mainb444f6a9f77e540c2b43.js.map
+//# sourceMappingURL=maind6c5d08a517f113f57ed.js.map
