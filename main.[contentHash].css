@@ -2220,7 +2220,7 @@ position: relative;
   }
 #company{
     position: relative;
-    transform: translateY(100px);
+    transform: translateY(300px);
     margin-top: -100px;
 }
 @media (max-width:750px){
@@ -2237,6 +2237,7 @@ position: relative;
 
 .company-title {
     z-index: -1;
+    
 }
 .company-dot{
     z-index: -2;
@@ -3017,6 +3018,42 @@ margin-bottom: 4.6px;
             z-index: -3;
             width:140vmax;
             height:67vmax;
+        }
+    }
+  
+
+    @media (min-width: 980px) {
+        #company{
+            position: relative;
+        }
+        #company::after{
+            content: "";
+            border-radius: 100%;
+            width: 140%;
+            left: -20%;
+            position: absolute;
+            bottom: 150px;
+            height: 700px;
+            z-index: -2;
+            /* border: 1px solid red; */
+            background-color: var(--section-bg);
+        }
+        .company-dot{
+            z-index: -3;
+            width:130vmax;
+            height:80vmax;
+        }
+        .company-main{
+            position: relative;
+            transform: translateY(-200px);
+            /* background-color: var(--section-bg); */
+         }
+         .company-hero {
+           /* transform: translateY(125); */
+            
+        }
+        .company-main{
+            transform: translateY(-300px);
         }
     }
   
