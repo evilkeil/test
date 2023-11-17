@@ -2364,6 +2364,7 @@ position: relative;
     cursor: pointer;
     margin-right: 8px;
     border: 2px solid var(--section-bg);
+    background-color: var(--section-bg);
 }
 
 .radio-label:hover .custom-radio,
@@ -3016,7 +3017,7 @@ margin-bottom: 4.6px;
             bottom: -150px;
             height: 1200px;
             z-index: -2;
-            /* border: 1px solid red; */
+           
             background-color: var(--section-bg);
         }
         .topics-dot{
@@ -3038,16 +3039,15 @@ margin-bottom: 4.6px;
             left: -20%;
             position: absolute;
             bottom: 150px;
-            height: 700px;
+            height: 400px;
             z-index: -2;
-            /* border: 1px solid red; */
             background-color: var(--section-bg);
         }
         .company-dot{
             z-index: -3;
             width:130vmax;
             height:85vmax;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             /* clip-path: circle(54.7% at 54% 100%); */
         }
         .company-main{
@@ -3067,9 +3067,64 @@ margin-bottom: 4.6px;
             color: black;
              z-index: 10;
              position: relative;
-             margin-top: 310px;
+             margin-top: 100px;
+             z-index: 10;
+             background-color: white;
+        }
+        .custom-shape-divider-bottom-1700216422 {
+            position: absolute;
+            bottom: -200px;
+            left: 0px;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            /* border: 1px solid red; */
+            z-index: -1;
+        }
+        
+        .custom-shape-divider-bottom-1700216422 svg {
+            position: relative;
+            display: block;
+            width: calc(140% + 1.3px);
+            height: 181px;
+        }
+        
+        .custom-shape-divider-bottom-1700216422 .shape-fill {
+            /* fill: #F0F5F5; */
+            fill: white;
+        }
+    
+        #company{
+           position: relative;
         }
     }
   
+   @media (max-width:980px) {
+    .custom-shape-divider-bottom-1700216422 {
+        position: absolute;
+        bottom: -200px;
+        left: 0px;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        /* border: 1px solid red; */
+        z-index: -1;
+        display: none;
+    }
+    
+    .custom-shape-divider-bottom-1700216422 svg {
+        position: relative;
+        display: block;
+        width: calc(140% + 1.3px);
+        height: 181px;
+        display: none;
+    }
+    
+    .custom-shape-divider-bottom-1700216422 .shape-fill {
+        /* fill: #F0F5F5; */
+        fill: white;
+        display: none;
+    }
+   }
 
 /*# sourceMappingURL=main.[contentHash].css.map*/
