@@ -352,9 +352,17 @@ checkbox.addEventListener('click', function() {
     }
 });
 
+//test 
+
+const doc = document.querySelector('.about-bottom');
+
+doc.addEventListener('click',(e)=>{
+  console.log('clicked');
+});
+
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main40af2b11ac2e6cdeb421.js.map
+//# sourceMappingURL=mainb0f2f72a523eee162fa6.js.map
