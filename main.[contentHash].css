@@ -1747,26 +1747,21 @@ position: relative;
 }
 
 /* styles realted to animations */
-.carousel,
+/* adjusting the space between the service title and carosel */
+/* .carousel,
 .loop-three{
-    /* margin-bottom:100px; */
     background: transparent;
 }
 
 @media(max-width:300px){
     .carousel,
 .loop-three{
-        /* margin-bottom:100px; */
-        /* border:1px solid red; */
         background: transparent;
     }
 }
 @media(max-width:370px){
     .carousel{
-        /* margin-bottom:120px; */
-        /* border:1px solid red; */
         background: transparent;
-        /* transform: translateY(-200px); */
         margin-top: -450px;
     }
 }
@@ -1774,8 +1769,6 @@ position: relative;
 @media(min-width:390px){
     .carousel,
 .loop-three{
-        /* margin-bottom:310px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -250px;
     }
@@ -1783,18 +1776,13 @@ position: relative;
 @media(min-width:400px){
     .carousel,
     .loop-three{
-        /* margin-bottom:340px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -300px;
-    
     }
 }
 @media(min-width:410px){
     .carousel,
     .loop-three{
-        /* margin-bottom: 250px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -350px;
     }
@@ -1802,8 +1790,6 @@ position: relative;
 @media(min-width:419px){
     .carousel,
     .loop-three{
-        /* margin-bottom: 250px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -450px;
     }
@@ -1811,8 +1797,6 @@ position: relative;
 @media(min-width:425px){
     .carousel,
     .loop-three{
-        /* margin-bottom: 250px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -350px;
     }
@@ -1821,8 +1805,6 @@ position: relative;
 @media(min-width:750px){
     .carousel,
     .loop-three{
-        /* margin-bottom: 250px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -300px;
     }
@@ -1831,7 +1813,6 @@ position: relative;
     .carousel,
     .loop-three{
         margin-bottom: 100px;
-        /* border:1px solid red; */
         background: transparent;
     }
 }
@@ -1839,19 +1820,17 @@ position: relative;
 @media(min-width:1000px){
     .carousel,
     .loop-three{
-        /* margin-bottom: 250px; */
-        /* border:1px solid red; */
         background: transparent;
         margin-top: -220px;
     }
-}
-/* adjusting the space between the service title and carosel */
+} */
 
 @media(min-width:750px){
     .carousel{
         transform: translateY(-200px);
     }
 }
+
 
 #service::after{
     content:"" ;
@@ -1883,12 +1862,10 @@ position: relative;
 
 #topics{
     margin-top: 10px; 
-    /* background-color: var(--section-bg); */
     color: black;
     gap: 37.16px;
     padding-bottom: 0px;
     padding-top: 65px;
-
     position: relative;
     transform: translateY(-300px);
 }
@@ -1902,12 +1879,10 @@ position: relative;
 @media (max-width:750px){
     .topics-main{
         background-color: var(--section-bg);
-       
     }
     .topics-main::after{
         content:"" ;
         border-radius: 50%;
-    
         width: 100%;
         position: absolute;
         bottom: -50px;
@@ -1916,28 +1891,6 @@ position: relative;
         z-index: -1;
     }
 }
-/* .topics-main::after{
-    content:"" ;
-    border-radius: 50%;
-
-    width: 100%;
-    position: absolute;
-    bottom: -50px;
-    height: 100px;
-    background-color: var(--section-bg);
-    z-index: -1;
- 
-    } */
-    /* #topics::before{
-        content:"" ;
-        border-radius: 50%;
-        width: 100%;
-        position: absolute;
-        top: -50px;
-        height: 100px;
-        background-color: var(--section-bg);
-      
-        } */
         .topics-title{
             font-size: 8vmin;
             font-weight: bold;
@@ -2084,34 +2037,6 @@ position: relative;
 /* ------------------- */
 /*       company       */
 /* ------------------- */
-
-/* .full {
-    width: 100%;
-    height: 100vh;
-    overflow:hidden;
-  }
-  
-  .dot {
-    position: absolute;
-    width:142vmax;
-    height:142vmax;
-    left:50%;
-    top:50%;
-    transform:translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    background-color:#F0F5F5;
-  } */
-  
-  /* .company-title{
-    font-size: 8vmin;
-    font-weight: bold;
-    margin:0;
-    white-space:nowrap;
-    position:absolute;
-    left:100%;
-    top:50%;
-    transform:translateY(-50%);
-  } */
   .company-title{
     font-size: 8vmin;
     font-weight: bold;
@@ -2169,8 +2094,6 @@ position: relative;
   .company-info{
       display: grid;
       place-content: center;
-      /* border: 1px solid red; */
-      /* margin-bottom: 100px; */
   }
 
   @media (min-width:750px) {
@@ -3059,32 +2982,116 @@ margin-bottom: 4.6px;
             }
 
 
-            /* @media (max-width:749px){
-                #test{
-                    display: grid;
-                   
-                    grid-template-columns: 1fr 250px 1fr;
+            /* @media(max-width:300px){
+                .carousel,
+            .loop-three{
+                    background: transparent;
                 }
-                #image,
-                #image2,
-                #image3,
-                #image4,
-                #image5,
-                #image6,
-                #image7{
-                    border: 1px solid red;
-                    grid-column: 2;
-                    
+            }
+            @media(max-width:370px){
+                .carousel{
+                    background: transparent;
+                    margin-top: -450px;
                 }
-    
-                .service-card_title{
-                    grid-column: 2;
+            }
+            
+            @media(min-width:390px){
+                .carousel,
+            .loop-three{
+                    background: transparent;
+                    margin-top: -250px;
                 }
-    
-                .service_card_description{
-                    grid-column: 2;
-                    margin-bottom: 30px;
-        
+            }
+            @media(min-width:400px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -300px;
+                }
+            }
+            @media(min-width:410px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -350px;
+                }
+            }
+            @media(min-width:419px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -450px;
+                }
+            }
+            @media(min-width:425px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -350px;
+                }
+            }
+            
+            @media(min-width:750px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -300px;
+                }
+            }
+            @media(min-width:799px){
+                .carousel,
+                .loop-three{
+                    margin-bottom: 100px;
+                    background: transparent;
+                }
+            }
+            
+            @media(min-width:1000px){
+                .carousel,
+                .loop-three{
+                    background: transparent;
+                    margin-top: -220px;
+                }
+            }
+
+   */
+
+@media (min-width: 768px) and (max-width: 980px){
+    .carousel,
+    .loop-three{
+            background: transparent;
+            transform: translateY(-250px);
+     }
+}
+@media (min-width:740px){
+    .carousel,
+    .loop-three{
+            background: transparent;
+            margin-top: -300px;
+     }
+}
+
+@media (max-width:739px){
+    .carousel,
+    .loop-three{
+            background: transparent;
+            margin-top: -250px;
+     }
+}
+
+            /* @media (max-width:400px){
+                .carousel,
+            .loop-three{
+                    background: transparent;
+                    transform: translateY(-250px);
+                }
+            }
+
+            @media (max-width:400px){
+                .carousel,
+            .loop-three{
+                    background: transparent;
+                    transform: translateY(-350px);
                 }
             } */
 
