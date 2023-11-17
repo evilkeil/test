@@ -1846,20 +1846,7 @@ position: relative;
     background-color: var(--section-bg);
    
     }
-    
-    @media (min-width:750px){
-        #service::after{
-            content:"" ;
-            border-radius: 50%;
-         
-            width: 100%;
-            position: absolute;
-            bottom: -45px;
-            height: 120px;
-            background-color: var(--section-bg);
-            } 
-    }
-    
+  
 /* ------------------- */
 /*       topics         */
 /* ------------------- */
@@ -3126,5 +3113,44 @@ margin-bottom: 4.6px;
         display: none;
     }
    }
+
+
+   /* service */
+
+  
+   @media (min-width:980px){
+    #service::after{
+        content:"" ;
+        border-radius: 50%;
+     /* border: 1px solid red; */
+        width: 200%;
+        position: absolute;
+        bottom: -200px;
+        left: -50%;
+        height: 3000px;
+        background-color: var(--section-bg);
+        z-index: -5;
+        clip-path: circle(50% at 50% 94%);
+        } 
+}
+
+
+
+/* @media (max-width:980px){
+    #service{
+        position: relative;
+    }
+    #service::after{
+        content: "";
+        border-radius: 100%;
+        width: 140%;
+        left: -20%;
+        position: absolute;
+        bottom: -500px;
+        height: 1400px;
+        z-index: 5;
+        background-color: var(--section-bg);
+    } */
+/* } */
 
 /*# sourceMappingURL=main.[contentHash].css.map*/

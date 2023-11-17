@@ -227,9 +227,9 @@ tl2
     }
   });
     
-  tl3.to(".service-dot", {scale:0.5})
+  tl3.to(".service-dot", {scale:1})
   .to(".service-title", {x:"-50vw", xPercent:-50}, 0)
-  .to(".service-dot", {scale:1})
+  // .to(".service-dot", {scale:1})
   // .to(".service-main", {y:"-33%"})  //todo: adust the y in breakpoints
   .to(".service-main", {y:"-110px"})
   .set(".service-main", {backgroundColor:"transparent"})
@@ -365,4 +365,4 @@ doc.addEventListener('click',(e)=>{
 
 /******/ })()
 ;
-//# sourceMappingURL=mainb0f2f72a523eee162fa6.js.map
+//# sourceMappingURL=main7802a08f19401764a3c0.js.map
