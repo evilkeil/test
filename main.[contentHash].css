@@ -2317,16 +2317,6 @@ position: relative;
    display: grid;
    place-content: center;
 }
-.contact-header{
-    /* grid-column: 2; */
-    /* margin: 0 auto; */
-    /* border: 1px solid red; */
-}
-.contact-form{
-    /* grid-column: 2; */
-    /* margin: 0 auto; */
-    /* border: 1px solid red; */
-}
 .contact-header_sub{
     line-height: 28px;
 }
@@ -2585,25 +2575,7 @@ border-radius: 10px;
         height: 246px;
     }
 
-    /* fix scrollbar not showing on desktop */
-    .terms::-webkit-scrollbar {
-        -webkit-appearance: none;
-    }
-    
-    .terms::-webkit-scrollbar:vertical {
-        width: 11px;
-    }
-    
-    .terms::-webkit-scrollbar:horizontal {
-        height: 11px;
-    }
-    
-    .terms::-webkit-scrollbar-thumb {
-        border-radius: 8px;
-        border: 2px solid white; /* should match background, can't be transparent */
-        background-color: rgba(0, 0, 0, .5);
-    }
-    
+
 
     .terms-padding{
     overflow: hidden;
@@ -2808,7 +2780,9 @@ margin-bottom: 4.6px;
     cursor: pointer;
  }
 
- 
+ .terms{
+    /* border: 1px solid red; */
+ }
 /* ------------------- */
 /*       footer        */
 /* ------------------- */
@@ -2982,79 +2956,7 @@ margin-bottom: 4.6px;
             }
 
 
-            /* @media(max-width:300px){
-                .carousel,
-            .loop-three{
-                    background: transparent;
-                }
-            }
-            @media(max-width:370px){
-                .carousel{
-                    background: transparent;
-                    margin-top: -450px;
-                }
-            }
-            
-            @media(min-width:390px){
-                .carousel,
-            .loop-three{
-                    background: transparent;
-                    margin-top: -250px;
-                }
-            }
-            @media(min-width:400px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -300px;
-                }
-            }
-            @media(min-width:410px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -350px;
-                }
-            }
-            @media(min-width:419px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -450px;
-                }
-            }
-            @media(min-width:425px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -350px;
-                }
-            }
-            
-            @media(min-width:750px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -300px;
-                }
-            }
-            @media(min-width:799px){
-                .carousel,
-                .loop-three{
-                    margin-bottom: 100px;
-                    background: transparent;
-                }
-            }
-            
-            @media(min-width:1000px){
-                .carousel,
-                .loop-three{
-                    background: transparent;
-                    margin-top: -220px;
-                }
-            }
-
-   */
+      
    @media (min-width: 980px) {
     .carousel,
     .loop-three{
@@ -3085,20 +2987,38 @@ margin-bottom: 4.6px;
      }
 }
 
-            /* @media (max-width:400px){
-                .carousel,
-            .loop-three{
-                    background: transparent;
-                    transform: translateY(-250px);
-                }
-            }
 
-            @media (max-width:400px){
-                .carousel,
-            .loop-three{
-                    background: transparent;
-                    transform: translateY(-350px);
-                }
-            } */
+
+
+/* try to fix the topics  */
+
+
+
+
+
+
+    @media (min-width: 980px) {
+        #topics{
+            position: relative;
+        }
+        #topics::after{
+            content: "";
+            border-radius: 100%;
+            width: 140%;
+            left: -20%;
+            position: absolute;
+            bottom: -150px;
+            height: 1200px;
+            z-index: -2;
+            /* border: 1px solid red; */
+            background-color: var(--section-bg);
+        }
+        .topics-dot{
+            z-index: -3;
+            width:140vmax;
+            height:67vmax;
+        }
+    }
+  
 
 /*# sourceMappingURL=main.[contentHash].css.map*/

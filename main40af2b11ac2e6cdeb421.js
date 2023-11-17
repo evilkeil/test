@@ -141,18 +141,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //smooth scroll
 
-const lenis = new Lenis();
+// const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  // console.log(e);
-});
+// lenis.on("scroll", (e) => {
+  
+// });
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 
 //animations
@@ -357,4 +357,4 @@ checkbox.addEventListener('click', function() {
 
 /******/ })()
 ;
-//# sourceMappingURL=main87e044914948cc896f87.js.map
+//# sourceMappingURL=main40af2b11ac2e6cdeb421.js.map
