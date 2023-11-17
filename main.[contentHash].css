@@ -2027,6 +2027,7 @@ position: relative;
         display: grid;
         place-items: center;
         text-align: end;
+        justify-items: start;
       }
       .blog_date{
         color: #C8C8C8;
