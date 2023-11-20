@@ -892,7 +892,7 @@ position: relative;
     width: 370px;
 }
 
-@media (max-width:600px){
+@media (max-width:800px){
     
     .about-top-title_eng{
         color: #FFFFFF;
@@ -1034,7 +1034,7 @@ position: relative;
     font-weight: 300;
     font-style: normal;
  }
- @media (max-width:600px){
+ @media (max-width:800px){
     .about-us-list{
         width: 272.5px;
     }
@@ -1646,7 +1646,7 @@ position: relative;
     height: 50px !important;
 }
 
-@media (min-width:750px){
+@media (min-width:800px){
 .prev,
 .next{
     width: 80px;
@@ -1999,7 +1999,7 @@ position: relative;
 
 /* desktop */
 
-@media (min-width:750px){
+@media (min-width:800px){
     .topic{
         --beforeAnimation: 0;
         width: 900px;
@@ -2127,7 +2127,7 @@ position: relative;
       align-items: center;
       flex: 1;
   }
-  @media (min-width:750px){
+  @media (min-width:800px){
 
     .info-list-item{
         display: grid;
@@ -2280,9 +2280,7 @@ position: relative;
             transform: translateY(0px);
         }
     } */
-@media(min-width:750px){
-   
-}
+
 /* ------------------- */
 /*       contact       */
 /* ------------------- */
@@ -2314,7 +2312,7 @@ position: relative;
     line-height: 28px;
 }
 
-@media (min-width:750px){
+@media (min-width:800px){
     .contact-wrapper{
         gap: 114px;
     }
@@ -2425,7 +2423,7 @@ position: relative;
     font-size: 16px;
 }
 
-@media (min-width:750px){
+@media (min-width:800px){
     .contact-header_jp{
         font-size: 30px;
         margin-bottom: 6.21px;
@@ -2536,7 +2534,7 @@ margin-bottom: 26.93px;
 border-radius: 10px;
 }
 
-@media (min-width:750px){
+@media (min-width:800px){
     #contact input{
         height: 60px;
         width: 660px;
@@ -2661,7 +2659,7 @@ margin-bottom: 4.6px;
     margin-bottom: 47.97px;
 }
 
-@media (min-width:750px){
+@media (min-width:800px){
     .contact-wrapper{
         margin-bottom: 0px;
         
