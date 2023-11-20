@@ -2448,9 +2448,18 @@ margin-bottom: 4.6px;
     }
     .loop-two-desktop{
         position: absolute;
-        bottom:-100px;
-        right: 80%;
-        transform: scale(2);
+        bottom:-250px;
+        right: 180%;
+        transform: scale(5);
+    }
+
+    @media(min-width:800px){
+        .loop-two-desktop{
+            position: absolute;
+            bottom:-490px;
+            right: 65%;
+            transform: scale(3);
+        }
     }
     .loop-two-desktop{
         display: none;
