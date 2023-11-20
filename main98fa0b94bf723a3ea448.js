@@ -138,74 +138,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-//smooth scroll
-
-// const lenis = new Lenis();
-
-// lenis.on("scroll", (e) => {
-  
-// });
-
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
-
-// requestAnimationFrame(raf);
-
-
 //animations
+gsap.registerPlugin(ScrollTrigger);
 
+//animations for the about section
 
-  gsap.registerPlugin(ScrollTrigger);
-  
+//company name
 
- 
+const text = new SplitType("#company-name", { types: "chars" });
 
-  //animations for the about section
-
-  //company name
- 
-
-  const text = new SplitType('#company-name', { types: 'chars' });
-
-  text.chars.forEach((char, i) => {
-    gsap.to(char, {
-      opacity: 1,
-      duration: 0, // Instantly set initial opacity to 0.2
-      delay: i * 0.1 // Stagger the animation by 0.1 seconds
-    });
-  })
- 
- 
-
-  let tl1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".about-hero",
-      start: "top top",
-      scrub: true,
-      pin: true,
-    //  markers: true
-    }
+text.chars.forEach((char, i) => {
+  gsap.to(char, {
+    opacity: 1,
+    duration: 0, // Instantly set initial opacity to 0.2
+    delay: i * 0.1, // Stagger the animation by 0.1 seconds
   });
-  
-  tl1.to(".about-dot", {scale:1})
-  .from(".about-top_left", {opacity:0},)
-  .from(".about-top_right", {opacity:0}, 1)
-    // .set("#about", {backgroundColor:"#F0F5F5"});
-   
+});
+
+let tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".about-hero",
+    start: "top top",
+    scrub: true,
+    pin: true,
+    //  markers: true
+  },
+});
+
+tl1
+  .to(".about-dot", { scale: 1 })
+  .from(".about-top_left", { opacity: 0 })
+  .from(".about-top_right", { opacity: 0 }, 1);
+// .set("#about", {backgroundColor:"#F0F5F5"});
 
 //about ul
 const tl2 = gsap.timeline({
   scrollTrigger: ".animate-2",
   start: "60% bottom",
-  markers:true
- 
+  markers: true,
 });
 
 tl2
-  .from(".animate-1", { y: 100, opacity: 0, duration: 0.4 },0.6)
+  .from(".animate-1", { y: 100, opacity: 0, duration: 0.4 }, 0.6)
   .from(".animate-2", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-3", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-4", { y: 100, opacity: 0, duration: 0.4 })
@@ -214,112 +188,106 @@ tl2
   .from(".animate-7", { y: 100, opacity: 0, duration: 0.4 })
   .from(".animate-8", { y: 100, opacity: 0, duration: 0.4 });
 
+//animations for the service section
 
-   //animations for the service section
-
-   let tl3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".service-hero",
-      start: "top top",
-      scrub: true,
-      pin: true,
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".service-hero",
+    start: "top top",
+    scrub: true,
+    pin: true,
     //  markers: true
-    }
-  });
-    
-  tl3.to(".service-dot", {scale:1})
-  .to(".service-title", {x:"-50vw", xPercent:-50}, 0)
+  },
+});
+
+tl3
+  .to(".service-dot", { scale: 1 })
+  .to(".service-title", { x: "-50vw", xPercent: -50 }, 0)
   // .to(".service-dot", {scale:1})
   // .to(".service-main", {y:"-33%"})  //todo: adust the y in breakpoints
-  .to(".service-main", {y:"-110px"})
-  .set(".service-main", {backgroundColor:"transparent"})
-  .set("#service", {backgroundColor:"#F0F5F5"})
+  .to(".service-main", { y: "-110px" })
+  .set(".service-main", { backgroundColor: "transparent" })
+  .set("#service", { backgroundColor: "#F0F5F5" });
 
-  
+//topics animations
 
-    //topics animations
-
-    //old
+//old
 
 let tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: "#topics",
     start: "-=100px",
     scrub: false,
-     //onEnter, onLeave, onEnterBack, onLeaveBack
+    //onEnter, onLeave, onEnterBack, onLeaveBack
     toggleActions: "play none none reset",
     // pin: true,
-  //  markers: true
-  }
+    //  markers: true
+  },
 });
 
 tl5
-.from(".topic", {y:-20,opacity:0,duration:1.5},0.1)
-  .to(".topic", {'--beforeAnimation': "100%",duration: 3}, )
-  
+  .from(".topic", { y: -20, opacity: 0, duration: 1.5 }, 0.1)
+  .to(".topic", { "--beforeAnimation": "100%", duration: 3 });
 
 function topicTop() {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#topics",
       start: "-=400px top",
-      end:"+=200",
+      end: "+=200",
       scrub: true,
       // pin: true,
-    //  markers: true
-    }
+      //  markers: true
+    },
   });
 
-  tl.to(".topics-dot", {scale:1})
-  .to(".topics-title", {x:"-50vw", xPercent:-50}, 0)
-  .from(".topics-title", {opacity:0})
+  tl.to(".topics-dot", { scale: 1 })
+    .to(".topics-title", { x: "-50vw", xPercent: -50 }, 0)
+    .from(".topics-title", { opacity: 0 });
   // .set(".topics-main", {backgroundColor:"#F0F5F5"},0);
 
   return tl;
 }
 
-const master = gsap.timeline()
-master.add(topicTop())
-  
-   
-//company section animations 
+const master = gsap.timeline();
+master.add(topicTop());
+
+//company section animations
 
 let tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: "#company",
     start: "-=100px",
     scrub: false,
-     //onEnter, onLeave, onEnterBack, onLeaveBack
+    //onEnter, onLeave, onEnterBack, onLeaveBack
     toggleActions: "play none none reset",
     // pin: true,
-  //  markers: true
-  }
+    //  markers: true
+  },
 });
 
 tl4
-.from(".company_name", {x:-60 , opacity:0},0.1)
-.from(".company_year", {x:60 , opacity:0},0.1)
-.from(".company_address", {x:-60 , opacity:0},0.1)
-.from(".company_tel", {x:60 , opacity:0},0.1)
-.from(".company_mail", {x:-60 , opacity:0},0.1)
-
-  
+  .from(".company_name", { x: -60, opacity: 0 }, 0.1)
+  .from(".company_year", { x: 60, opacity: 0 }, 0.1)
+  .from(".company_address", { x: -60, opacity: 0 }, 0.1)
+  .from(".company_tel", { x: 60, opacity: 0 }, 0.1)
+  .from(".company_mail", { x: -60, opacity: 0 }, 0.1);
 
 function companyTop() {
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#company",
       start: "-=450px top",
-      end:"+=200",
+      end: "+=200",
       scrub: true,
       // pin: true,
-    //  markers: true
-    }
+      //  markers: true
+    },
   });
 
-  tl.to(".company-dot", {scale:1})
-  .to(".company-title", {x:"-50vw", xPercent:-50}, 0)
-  .from(".company-title", {opacity:0})
+  tl.to(".company-dot", { scale: 1 })
+    .to(".company-title", { x: "-50vw", xPercent: -50 }, 0)
+    .from(".company-title", { opacity: 0 });
   // .set(".company-main", {backgroundColor:"#F0F5F5"},0);
 
   return tl;
@@ -327,42 +295,29 @@ function companyTop() {
 
 const masterCompany = gsap.timeline();
 masterCompany.add(companyTop());
-  
-   
 
 // test to see whther the input is wroking
 
-const checkbox = document.getElementById('TnC');
-const checkedSVG = document.querySelector('.checked');
-const uncheckedSVG = document.querySelector('.unchecked');
+const checkbox = document.getElementById("TnC");
+const checkedSVG = document.querySelector(".checked");
+const uncheckedSVG = document.querySelector(".unchecked");
 
 // Initially hide the unchecked SVG
 
-
-checkbox.addEventListener('click', function() {
-    if (this.checked) {
-        // Checkbox is checked, display the checked SVG
-        checkedSVG.style.display = 'block';
-        uncheckedSVG.style.display = 'none';
-       
-    } else {
-        // Checkbox is unchecked, display the unchecked SVG
-        checkedSVG.style.display = 'none';
-        uncheckedSVG.style.display = 'block';
-    }
+checkbox.addEventListener("click", function () {
+  if (this.checked) {
+    // Checkbox is checked, display the checked SVG
+    checkedSVG.style.display = "block";
+    uncheckedSVG.style.display = "none";
+  } else {
+    // Checkbox is unchecked, display the unchecked SVG
+    checkedSVG.style.display = "none";
+    uncheckedSVG.style.display = "block";
+  }
 });
-
-//test 
-
-const doc = document.querySelector('.about-bottom');
-
-doc.addEventListener('click',(e)=>{
-  console.log('clicked');
-});
-
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main7802a08f19401764a3c0.js.map
+//# sourceMappingURL=main98fa0b94bf723a3ea448.js.map
