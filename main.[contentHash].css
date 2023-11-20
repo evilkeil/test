@@ -2449,8 +2449,8 @@ margin-bottom: 4.6px;
     .loop-two-desktop{
         position: absolute;
         bottom:-250px;
-        right: 193%;
-        transform: scale(5);
+        right: 153%;
+        transform: scale(4);
     }
 
     @media(min-width:800px){
