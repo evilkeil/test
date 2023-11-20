@@ -90,7 +90,6 @@
             </div>    
         </div>
         <div class="about-container main-grid">
-            <!-- <img src="./assets/images/decor/loop1@2x.png" alt="" class="loop-two" aria-hidden='true'> real one -->
             <div class="about-center">
                 <ul class="about-us-list" role="list">
                     <li class="about-us-list-item center"><p>業界の枠を超え<br>人と人とをつなぐ<br>トータルエージェント<br>カンパニー</p></li>
@@ -104,19 +103,14 @@
                     <li class="about-us-list-item item-8 sub-item"><p class="animate-2">ヘアメイク<br>スタイリスト</p></li>
                     <img src="loop1@2x.png" alt="" class="loop-two-desktop" aria-hidden='true'>
                 </ul>
-                <!-- <img src="./assets/images/decor/loop1@2x.png" alt="" class="loop-two" aria-hidden='true'>  -->
             </div>
             <div class="about-bottom update-bg contact-btn-wrapper cursor-pointer">
                 <img src="loop1@2x.png" alt="" class="loop-two" aria-hidden='true'> 
-                <button class="contact-btn" id="serviceTrigger"><a href="#contact"><img src="contact-btn.svg" alt="contact us"></a></button>
-                
+                <button class="contact-btn" id="serviceTrigger"><a href="#contact"><img src="contact-btn.svg" alt="contact us"></a></button>    
             </div>
-            
         </div>
     </section>
-    <!-- <div class="decor-wrap"><img src="./assets/images/decor/loop1@2x.png" alt="" class="loop-two-desktop" aria-hidden='true'></div> -->
     <section id="service">
-            
             <div class="full service-hero">
                 <div class="dot service-dot"></div>
                 <div class="service-title title-wrapper">
@@ -124,9 +118,7 @@
                     <h2 class="title_jp">サービス</h2>
                 </div>        
             </div>
-            
                 <div class="service-main main-common">
-                    <!-- <img src="./assets/images/decor/mebius-side.svg" alt="" class="loop-three"> -->
                     <div class="carousel">
                         <div class="prev" id="serviceBtn">
                             <button class="carosel-prev-btn carosel-btn">
@@ -174,7 +166,6 @@
                            </button>
                        </div>
                     </div>
-
                     <div class="service-contact-btn contact-btn-wrapper cursor-pointer">
                     <button class="contact-btn"><a href="#contact"><img src="contact-btn.svg" alt="contact us"></a></button>
                     </div>
@@ -260,7 +251,6 @@
         </div>
     </section>
     <section id="contact">
-        <!-- <div class="contact-wrapper main-grid"> -->
             <div class="contact-wrapper">
             <div class="contact-header">
                 <div class="contact-top_left">
@@ -377,125 +367,40 @@
     <script src="https://unpkg.com/split-type"></script>
     <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>  -->
 
-    <script>
-        //script for the service section carosel
+    <script>  
+    //script for the service section carosel
+$(document).ready(function () {
+  $(".carousel").carousel({
+    indicators: true,
+    shift: 200,
+    duration: 250,
+  });
 
-        
-     
-  
-        $(document).ready(function(){
-            $('.carousel').carousel({
-                indicators:true,
-                shift:200,
-                duration:250,
-                
-            });
+  $(".next").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".carousel").carousel("next");
+  });
+  $(".prev").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".carousel").carousel("prev");
+  });
+});
 
-        
-            $('.next').click(function(e){
-                e.preventDefault();
-                e.stopPropagation();
-                $('.carousel').carousel('next');
-            });
-            $('.prev').click(function(e){
-                e.preventDefault();
-                e.stopPropagation();
-                $('.carousel').carousel('prev');
-            });
-           
-        });
+//script for scroll to top
 
-        //script for scrol to top
-        
-        $(function(){
-  $('a[href^="#"]').click(function(){
+$(function () {
+  $('a[href^="#"]').click(function () {
     var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
 });
-       
-       
-    </script>
-    <!-- <link rel="stylesheet" href="master.css"> -->
-    <!-- <style type="text/css">
-        .about-center::after{
-            border: none;
-        }
-        .about-bottom::after{
-            border: none;
-        }
-        .update-bg.about-bottom::after{
-            content: "";
-            border-radius: 100%;
-            width: 140%;
-            left: -20%;
-            position: absolute;
-            top: -1100px;
-            height: 1400px;
-            z-index: -1;
-        }
-            @media (min-width: 1380px) and (max-width: 1700px) {
-                .update-bg.about-bottom::after{
-                    top: -800px;
-                    height: 1000px;
-                }
-            }
-            @media (min-width: 980px) and (max-width: 1380px) {
-                .update-bg.about-bottom::after{
-                    top: -700px;
-                    height: 900px;
-                }
-            }
-            @media (min-width: 768px) and (max-width: 980px) {
-                .update-bg.about-bottom::after{
-                    top: -500px;
-                    height: 700px;
-                }
-            }
-            
-            @media (min-width:750px){
 
-                .update-bg.about-bottom{
-                    grid-column: 1/5;
-                    width: 100%;
-                    transform: translateY(-50px);
-                    padding-bottom: 50px;
-                }
-            } 
-            @media (max-width:750px){
-                .update-bg.about-bottom::after{
-                    border-radius: 80%;
-                    height: 400px;
-                    z-index: -1;
-                    background-color: #F0F5F5;
-                } 
-                .update-bg.about-bottom{
-                    position: relative;
-                    width: 100%;
-                }
-            }
-            @media (min-width: 520px) and (max-width: 768px) {
-                .update-bg.about-bottom::after{
-                    top: -400px;
-                    height: 600px;
-                    border-radius: 100%;
-                    width: 160%;
-                    left: -30%;
-                }
-            }
-            @media (min-width: 300px) and (max-width: 520px) {
-                .update-bg.about-bottom::after{
-                    top: -250px;
-                    height: 400px;
-                    border-radius: 50%;
-                    width: 140%;
-                    left: -20%;
-                }
-            }
-    </style> -->
+    </script>
 </body>
 </html>
