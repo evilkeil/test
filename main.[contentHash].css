@@ -2473,7 +2473,8 @@ margin-bottom: 4.6px;
     .loop-two-desktop{
         display: none;
     }
-@media (min-width:700px){
+
+
     .loop-two-desktop{
         display: block;
     }
@@ -2502,6 +2503,6 @@ margin-bottom: 4.6px;
         z-index: 12;
      }
     
-}
+
 
 /*# sourceMappingURL=main.[contentHash].css.map*/
